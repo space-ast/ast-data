@@ -1,0 +1,55 @@
+#
+# Based upon "Report of the IAU/IAG Working Group on Cartographic Coordinates and
+# Rotational Elements: 2009", Celestial Mechanics 109: 101-135, 2011.
+#
+# NOTE: These equations refer to the rotation of the magnetic field.
+#
+
+BEGIN RotationalData
+
+	ModelName	IAU 2009
+
+	Description	Coefficients from the IAU 2009 parameter set
+
+    RotationEpoch                2451545.0000000
+
+	Begin RotationalElement
+	Type			SpinAxisRightAscension
+	Constant		268.056595
+	Rate			-0.006499
+	RateDot		 	0.0
+	NumberOfTerms		5
+	SineOrCosine		Sin
+	Coefficients
+		0.000117	99.360714	0.132796840520	0.0
+		0.000938   175.895369	0.032634099932	0.0
+		0.001432   300.323162	0.007188158795	0.0
+		0.000030   114.012305	0.166194321697	0.0
+		0.002150	49.511251	0.001760438056	0.0
+	End RotationalElement
+
+
+	Begin RotationalElement
+	Type			SpinAxisDeclination
+	Constant		64.495303
+	Rate			0.002413
+	RateDot		 	0.0
+	NumberOfTerms		5
+	SineOrCosine		Cos
+	Coefficients
+		0.000050	99.360714	0.132796840520	0.0
+		0.000404   175.895369	0.032634099932	0.0
+		0.000617   300.323162	0.007188158795	0.0
+	   -0.000013   114.012305	0.166194321697	0.0
+		0.000926	49.511251	0.001760438056	0.0
+	End RotationalElement
+
+	Begin RotationalElement
+	Type			Rotation
+	Constant		284.95
+	Rate			870.5360000
+	RateDot		   	0.0
+	NumberOfTerms	   	0
+	End RotationalElement
+
+END RotationalData
