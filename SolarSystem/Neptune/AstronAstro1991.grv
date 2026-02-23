@@ -1,0 +1,22 @@
+stk.v.5.0
+
+# http://ssd.jpl.nasa.gov/sat_gravity.html
+
+# Reference: Jacobson, R. A., Riedel, J. E. and Taylor, A. H.
+#			 "The orbits of Triton and Nereid from spacecraft
+#			 and Earthbased observations," Astronomy and Astrophysics
+#			 247, 565-575, 1991.
+
+Model 			AstronAstro1991
+CentralBody			Neptune
+Degree 			4
+Order 			0
+GM 				6.835107e+015
+RefDistance 	25225.0e+03 
+Normalized 		No
+
+Begin Coefficients
+2 0 -3410.0e-6  0.0
+3 0  	0.0  	0.0
+4 0    35.0e-6	0.0
+End Coefficients

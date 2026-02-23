@@ -1,0 +1,114 @@
+
+BEGIN CentralBody
+
+    Name            Neptune
+
+    Prefix          Planeto
+
+    ShortDescription            Planet Neptune
+
+    Description         Planet Neptune
+
+    Type            Planet
+
+	FuncCbInit      NeptuneInit
+	FuncCbFree      PlanetFree
+	FuncCbLoad      PlanetLoad
+	FuncCbSave      PlanetSave
+	FuncCbCopy      PlanetCopy
+	FuncCbSet      PlanetSet
+
+BEGIN          AstroDefinition
+
+#Gm for planet Neptune, from AstronAstro1991.grv
+	  Gm                  6.835107e+015
+	  
+# Gm for the Neptunian system from nep016-6.bsp file
+	  SystemGm			  6.836534878891925e+015
+
+# Gm for the Neptunian system from DE405 file
+#	  SystemGm			  6.8365340623829e+015
+
+# Gm for the Neptunian system from http://ssd.jpl.nasa.gov/sat_gravity.html
+#	  SystemGm			  6.836535e+015
+
+#
+# Shape values are from "Report of the IAU/IAG Working Group on Cartographic Coordinates
+# and Rotational Elements: 2006", Celestial Mechanics Dyn Astry 98: 155-180, 2007.
+#
+ 
+      GravityModel		  AstronAstro1991
+      
+# To reset the values to those used previous to STK 6.2,
+# uncomment the following lines
+#	  Gm				  6.8713e+015
+#	  GravityModel		  ZonalsToJ4
+
+      Shape      	 OblateSpheroid
+      MajorAxis      2.47640000000000e+007
+      MinorAxis      2.43410000000000e+007
+      
+      MaxAltitude         0.00000000000000e+000
+
+# As of STK v11.2, RefDistance is established from the GravityModel      
+# and MinRadius is determined from Shape parameters. Uncomment lines
+# below to for STK versions prior to v11.2.
+#     RefDistance         2.47640000000000e+007
+#     MinRadius           2.43410000000000e+007
+
+# Previous to STK 9.0, the folowing shape value were used:
+#     RefDistance    2.52690000000000e+007
+#     MinRadius      2.48000000000000e+007
+#     MajorAxis      2.52690000000000e+007
+#     MinorAxis      2.48000000000000e+007
+
+      ParentName          Sun
+
+      PathGenerator GreatArc
+      PathGenerator J2Perturbation
+      PathGenerator J4Perturbation
+      PathGenerator Rocket
+      PathGenerator TwoBody
+      PathGenerator StkExternal
+      PathGenerator Astrogator
+      PathGenerator SPICE
+      PathGenerator HoldCBIPosition
+      PathGenerator HoldCBFPosition
+      PathGenerator SimpleAscent
+      PathGenerator HPOP
+
+
+END          AstroDefinition
+
+BEGIN		SpinData
+
+	RotationDefinitionFile		NeptuneAttitude2000.rot
+	
+END 			SpinData
+
+BEGIN               EphemerisData
+
+# NOTE: currently the ephemeris source is set to use JPL SPICE files
+#		which can locate the barycenter or the planet center depending on the JplSpiceId
+#
+#		The JPL DE file only contains the barycenter
+#
+#		To instead use JPL DE file, uncomment out the following line and comment the JplSpice line
+
+#	EphemerisSource              JplDE
+	EphemerisSource              JplSpice
+
+
+# NOTE: if you are using SPICE, you may choose to use the planet center (899) or barycenter (8)
+
+	JplSpiceId                   899
+
+END					EphemerisData
+
+BEGIN	Neptune
+
+END     Neptune
+
+    ReadOnly            Yes
+
+END CentralBody

@@ -1,0 +1,108 @@
+
+BEGIN CentralBody
+
+    Name            Jupiter
+    
+	FuncCbInit      JupiterInit
+	FuncCbFree      PlanetFree
+	FuncCbLoad      PlanetLoad
+	FuncCbSave      PlanetSave
+	FuncCbCopy      PlanetCopy
+	FuncCbSet      PlanetSet
+	
+	Prefix          Planeto
+	
+	ShortDescription    Planet Jupiter
+	Description         Planet Jupiter
+	
+	Type            Planet
+
+BEGIN          AstroDefinition
+
+# Gm for planet Jupiter, from JUP230.grv
+      Gm                  1.26686535e+017
+      
+# Gm for the Jovian system from DE405 file
+#     SystemGm			  1.267127678578e+017
+      
+# Gm for the Jovian system from jup230.bsp file 
+	  SystemGm			  1.267127648382719e+017
+
+# Gm for the Jovian system from http://ssd.jpl.nasa.gov/sat_gravity.html
+#	  SystemGm			  1.26712765e+017
+
+#
+# Shape values are from "Report of the IAU/IAG Working Group on Cartographic Coordinates
+# and Rotational Elements: 2006", Celestial Mechanics Dyn Astry 98: 155-180, 2007.
+#
+	  
+      GravityModel		  JUP230
+      
+# To reset the values to those used previous to STK 6.2,
+# uncomment the following lines
+#	  Gm				  1.26712e+017
+#	  GravityModel		  ZonalsToJ4
+
+      Shape      	 OblateSpheroid
+      MajorAxis      7.14920000000000e+007
+      MinorAxis      6.68540000000000e+007
+
+      MaxAltitude         0.00000000000000e+000
+      
+# As of STK v11.2, RefDistance is established from the GravityModel      
+# and MinRadius is determined from Shape parameters. Uncomment lines
+# below to for STK versions prior to v11.2.
+#     RefDistance         7.14920000000000e+007
+#     MinRadius           6.68540000000000e+007
+
+      ParentName          Sun
+
+      PathGenerator GreatArc
+      PathGenerator J2Perturbation
+      PathGenerator J4Perturbation
+      PathGenerator Rocket
+      PathGenerator TwoBody
+      PathGenerator StkExternal
+      PathGenerator Astrogator
+      PathGenerator SPICE
+      PathGenerator HoldCBIPosition
+      PathGenerator HoldCBFPosition
+      PathGenerator SimpleAscent
+      PathGenerator HPOP
+
+
+END          AstroDefinition
+
+BEGIN		SpinData
+
+	RotationDefinitionFile		JupiterAttitude2009.rot
+
+END		SpinData
+
+BEGIN               EphemerisData
+
+# NOTE: currently the ephemeris source is set to use JPL SPICE files
+#		which can locate the barycenter or the planet center depending on the JplSpiceId
+#
+#		The JPL DE file only contains the barycenter
+#
+#		To instead use JPL DE file, uncomment out the following line and comment the JplSpice line
+
+#	EphemerisSource              JplDE
+	EphemerisSource              JplSpice
+
+# NOTE: if you are using SPICE, you may choose to use the planet center (599) or barycenter (5)
+
+	JplSpiceId                   599
+#	JplSpiceId                   5
+
+
+END					EphemerisData
+
+BEGIN	Jupiter
+
+END     Jupiter
+
+    ReadOnly            Yes
+
+END CentralBody

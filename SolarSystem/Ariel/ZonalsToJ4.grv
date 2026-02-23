@@ -1,0 +1,28 @@
+stk.v.5.0
+
+# ura083.bsp
+#
+#  Name     Number            GM             NDIV   NDEG   Model
+#  Ariel      701    8.648943821066345E+01      2     15   SATORB
+#  Umbrie     702    8.148337213859010E+01      2     15   SATORB
+#  Titani     703    2.286406014922988E+02      1     15   SATORB
+#  Oberon     704    1.909467780172403E+02      1     15   SATORB
+#  Mirand     705    4.403988880239192E+00      4     15   SATORB
+#  Uranus     799    5.793965663939276E+06      1     15   SATORB
+#  System            5.794557628118015E+06
+   
+# refDistance from mean radius listed in IAU 2006 doc
+
+Model 			ZonalsToJ4
+CentralBody		Ariel
+Degree 			4
+Order 			0
+GM 				8.648943821066345e+010
+RefDistance 	578.9e+3 
+Normalized 		No
+
+Begin Coefficients
+2 0  	0.0   	  0.0
+3 0     0.0  	  0.0
+4 0     0.0  	  0.0
+End Coefficients

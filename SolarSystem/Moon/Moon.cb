@@ -1,0 +1,204 @@
+BEGIN CentralBody
+
+	Name			Moon
+	
+	PenumbraConeFactor  1.2
+	
+BEGIN		AstroDefinition
+
+# value from GL0660B.grv
+      Gm					4.90280030555540e+012
+	
+      GravityModel		    GL0660B
+	
+# The value of Gm above is normally the value used by the Moon when computing 3rd body perturbations.
+
+# To reset the Gm value to that used from STK 11 - 11.1,
+# uncomment the following line
+
+#	  Gm				  4.902801076e+012
+
+# To reset the Gm value to that used from STK 9.x - 10.x,
+# uncomment the following lines
+
+#	  Gm				  4.902801076e+012
+#     GravityModel		  LP150Q
+
+# To use the value from STK versions 6.2 - 8.x , uncomment out the following line
+
+#     Gm 4.9028029535968e+12
+
+# To use values previous to STK 6.2, however, one could  either
+#	(i)  uncomment the SystemGm line below. Usually, this is used to distinguish between planetary
+#	     and system Gm values for planets like Jupiter and Saturn, but can be used for this purpose.
+#	(ii) reset all the values for the Moon using the comments given below
+
+#     SystemGm				4.9027949E12
+	
+# To reset the values to those used previous to STK 6.2,
+# uncomment the following lines
+#	  Gm				  4.9027949E12
+#	  GravityModel		  ZonalsToJ4
+
+#
+# The shape of the Moon is based upon "Report of the IAU/IAG Working Group on Cartographic Coordinates and
+# Rotational Elements of the Planets and satellites: 2000", 
+# Celestial Mechanics 82: 83-110, 2002.
+#
+# http://astrogeology.usgs.gov/Projects/ISPRS/PREPRINTS/IAU2000/IAU2000_preprint.pdf
+#
+
+      Shape      	 	Sphere
+      Radius	    	1737400.0
+
+ 	
+# below are simply estimates of the extremes in altitude of lunar topography
+# the actual min/max alt of topography depends on the source data
+      MinAltitude      -10000.0
+      MaxAltitude       10000.0
+	
+      DTEDSearchScale   1.5
+ 	
+#
+# Terrain data for the Moon is available from the Clementine mission,
+# from http://pds-geosciences.wustl.edu/missions/clementine/gravtopo.html 
+#
+# That data models the Moon as an oblate spheroid, using the following parameters
+#    
+#     Shape      	 	OblateSpheroid
+#     MajorAxis    		1738000.0
+#     MiddleAxis		1738000.0
+#     MinorAxis    		1737400.0
+
+# As of STK v11.2, RefDistance is established from the GravityModel      
+# and MinRadius is determined from Shape parameters. Uncomment lines
+# below to for STK versions prior to v11.2.
+#     RefDistance	 	1737400.0
+#     MinRadius	 	    1737400.0
+
+# Previous to 8.0, the Moon was modeled as a sphere using the following parameters
+#     Shape              Sphere
+#     MajorAxis    		1738200.0
+#     MiddleAxis		1738200.0
+#     MinorAxis    		1738200.0
+#     RefDistance		1738200.0
+#     MinRadius			1738200.0
+
+      ParentName				Earth
+	
+      PathGenerator       Astrogator
+      PathGenerator       GreatArc
+      PathGenerator       J2Perturbation
+      PathGenerator       J4Perturbation
+      PathGenerator       Rocket
+      PathGenerator       StkExternal
+      PathGenerator       TwoBody
+      PathGenerator	   	SimpleAscent
+      PathGenerator       SPICE
+      PathGenerator 		HoldCBIPosition
+      PathGenerator 		HoldCBFPosition
+      PathGenerator		HPOP
+	
+END			AstroDefinition
+
+BEGIN               EphemerisData
+
+# NOTE: currently the ephemeris source is set to use JPL DE file
+#
+# To instead use JPL Spice file, comment out the following line and uncomment the JplSpice line
+
+	EphemerisSource              JplDE
+#	EphemerisSource              JplSpice
+
+	JplSpiceId                   301
+
+
+END					EphemerisData
+
+
+BEGIN	Moon
+
+FixedFrame		MeanEarth
+
+# By default, the Fixed frame for the Moon is the MeanEarth (ME) frame.
+# Previous to STK 9 and ODTK 6, the Fixed frame for the Moon was defined by
+# the PrincipalAxes_403 frame if the user was using the DE 403 or DE 405 file
+# or by Analytic if using the DE 200 file.  You can uncomment a line below
+# to set the Fixed frame to another frame.
+
+# The Fixed_IAU2003 frame uses the RotationDefinitionFile MoonAttitude2000.rot
+
+# FixedFrame		Fixed_IAU2003
+# FixedFrame		Fixed_NoLibration
+# FixedFrame		PrincipalAxes_403
+# FixedFrame		PrincipalAxes_418
+# FixedFrame		PrincipalAxes_421
+# FixedFrame		PrincipalAxes_430
+
+# While the Fixed frame for the Moon is usually tied to the topography, the
+# frame used for evaluating the gravity field for the Moon uses a different
+# frame, normally a PrincipalAxes frame. The LP derived gravity fields are
+# consistent with the PrincipalAxes_403 frame while the GRAIL derived fields
+# are consistent with the PrincipalAxes_421 frame
+
+FixedFrameForGravity		PrincipalAxes_421
+
+Begin MeanEarthDefinition
+
+DeNum	403
+
+# PA_403 = Rz(63.8986'')Ry(79.0768'')Rx(0.1462'')ME from IAU2006
+# Thus: XAngle = 0.1462, YAngle = 79.0768, ZAngle = 63.8986 (units are arcsecs)
+
+XAngle	 0.1462
+YAngle	79.0768
+ZAngle	63.8986
+
+End MeanEarthDefinition
+
+Begin MeanEarthDefinition
+
+DeNum	418
+
+# PA_418 - DE418_LLR_Coordinates.pdf from JPL
+# IOM 335-JGW, WMF-20071024-002 24 Oct 2007, by J. G. Williams and W. M. Folkner
+# PA_418 = Rz(68.00'')Ry(78.62'')Rx(0.27'')ME (units are arcsecs)
+
+XAngle	 0.27
+YAngle	78.62
+ZAngle	68.00
+
+End MeanEarthDefinition
+
+Begin MeanEarthDefinition
+
+DeNum	421
+
+# PA_421 - de421_lunar_ephemeris_and_orientation.pdf from JPL
+# IOM 335-JW,DB, WMF-20080314-001 14 Mar 2008, by J. G. Williams, D. H. Boggs and W. M. Folkner
+# PA_421 = Rz(67.92'')Ry(78.56'')Rx(0.30'')ME (units are arcsecs)
+
+XAngle	 0.30
+YAngle	78.56
+ZAngle	67.92
+
+End MeanEarthDefinition
+
+Begin MeanEarthDefinition
+
+DeNum	430
+
+# PA_430 - de430_moon_coord.pdf from JPL
+# IOM 335-JW,DB, WMF-20130722-016 22 Jul 2013, by J. G. Williams, D. H. Boggs and W. M. Folkner
+# PA_430 = Rz(67.573'')Ry(78.58'')Rx(0.285'')ME (units are arcsecs)
+
+XAngle	 0.285
+YAngle	78.58
+ZAngle	67.573
+
+End MeanEarthDefinition
+
+END		Moon
+
+	
+END		CentralBody

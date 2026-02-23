@@ -1,0 +1,85 @@
+
+BEGIN CentralBody
+
+    Name            Ariel
+
+	FuncCbInit      AsterInit
+	FuncCbFree      PlanetFree
+	FuncCbLoad      PlanetLoad
+	FuncCbSave      PlanetSave
+	FuncCbCopy      PlanetCopy
+	FuncCbSet       PlanetSet
+	
+	Prefix          Moon
+	
+	ShortDescription    Moon of Uranus
+	Description         Moon of Uranus (I)
+	
+	Type            Moon
+
+#
+# Based upon "Report of the IAU/IAG Working Group on Cartographic Coordinates and
+# Rotational Elements of the Planets and satellites: 2006", 
+# Celestial Mechanics 98: 155-180, 2007.
+#
+
+BEGIN          AstroDefinition
+
+# value from ZonalsToJ4.grv
+      Gm                  8.648943821066345e+010
+       	  
+      GravityModel		  ZonalsToJ4
+      
+      Shape               TriaxialEllipsoid
+      MajorAxis           581.1e+003
+      MiddleAxis		  577.9e+003
+      MinorAxis           577.7e+003
+
+      MaxAltitude         0.00000000000000e+000
+      
+# As of STK v11.2, RefDistance is established from the GravityModel      
+# and MinRadius is determined from Shape parameters. Uncomment lines
+# below to for STK versions prior to v11.2.
+#     RefDistance         581.1e+003 
+#     MinRadius           577.7e+003 
+
+      ParentName          Uranus
+
+      PathGenerator       Astrogator
+      PathGenerator       GreatArc
+      PathGenerator       J2Perturbation
+      PathGenerator       J4Perturbation
+      PathGenerator       Rocket
+      PathGenerator       StkExternal
+      PathGenerator       SPICE
+      PathGenerator       TwoBody
+      PathGenerator       HoldCBIPosition
+      PathGenerator       HoldCBFPosition
+      PathGenerator 	  SimpleAscent
+      PathGenerator	      HPOP
+
+END          AstroDefinition
+
+BEGIN SpinData
+
+	RotationDefinitionFile	  ArielAttitude2006.rot
+
+END SpinData
+
+BEGIN EphemerisData
+
+    EphemerisSource              JplSpice
+    
+    JplSpiceID					 701
+
+    JplIndex                     -1
+
+END EphemerisData
+
+BEGIN   Ariel
+
+END     Ariel
+
+    ReadOnly            Yes
+
+END CentralBody
