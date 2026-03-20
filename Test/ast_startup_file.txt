@@ -1,0 +1,32 @@
+# 数据目录
+DATA_DIR = ./data/
+
+
+# 闰秒文件
+LSK_FILE = DATA_DIR/LeapSecond.dat
+
+# JPL DE星历文件
+JPLDE_FILE = DATA_DIR/plneph.430
+
+# EOP文件
+EOP_FILE = DATA_DIR/EOP-All.txt
+
+# 空间天气文件
+SPACEWEATHER_FILE = DATA_DIR/SpaceWeather-All-v1.2.dat
+
+# IAU X 系数文件
+IAUX_FILE = DATA_DIR/IERS-conventions/2010/tab5.2a.txt
+
+# IAU Y 系数文件
+IAUY_FILE = DATA_DIR/IERS-conventions/2010/tab5.2b.txt
+
+# IAU Z 系数文件
+IAUZ_FILE = DATA_DIR/IERS-conventions/2010/tab5.2d.txt
+
+# IAU XYS预计算系数文件
+IAUXYS_PRECOMPUTED_FILE = 
+
+# 太阳系目录
+SOLARSYSTEM_DIR = DATA_DIR/SolarSystem/
+
+
