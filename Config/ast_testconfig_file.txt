@@ -1,0 +1,32 @@
+SPK_DIR = ./data/Test/kernels
+
+SPK_FILE = SPK_DIR/spk/planets.bsp
+SPK_FILES = SPK_FILE
+SPK_FILES += SPK_DIR/spk/ceres.bsp   
+SPK_FILES += SPK_DIR/spk/jupiter.bsp 
+SPK_FILES += SPK_DIR/spk/mars.bsp    
+SPK_FILES += SPK_DIR/spk/neptune.bsp 
+SPK_FILES += SPK_DIR/spk/pluto.bsp   
+SPK_FILES += SPK_DIR/spk/saturn.bsp  
+SPK_FILES += SPK_DIR/spk/uranus.bsp  
+
+AST_DATA_DIR = ./data
+LSK_FILE = AST_DATA_DIR/Test/kernels/lsk/naif0012.tls
+
+
+PCK_FILE = AST_DATA_DIR/Test/kernels/pck/pck00011.tpc
+
+
+EOP_FILE = AST_DATA_DIR/SolarSystem/Earth/EOP-All.txt
+
+
+SOLARSYSTEM_DIR = AST_DATA_DIR/SolarSystem
+
+JPLDE_FILE = AST_DATA_DIR/SolarSystem/plneph.430
+JPLDE_FILES = JPLDE_FILE
+
+IAUXYS_PRECOMPUTED_FILE = AST_DATA_DIR/Test/ICRF/IAU2006_XYS.dat
+
+
+CSPICE_LIBS = cspice
+CSPICE_LIBS += cspiceD

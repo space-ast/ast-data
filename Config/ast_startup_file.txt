@@ -1,3 +1,5 @@
+# 将该文件放在动态库所在目录内，程序会根据配置加载数据文件
+
 # 数据目录
 DATA_DIR = ./data/
 
@@ -29,4 +31,6 @@ IAUXYS_PRECOMPUTED_FILE =
 # 太阳系目录
 SOLARSYSTEM_DIR = DATA_DIR/SolarSystem/
 
-
+# cspice库
+CSPICE_LIBS = cspice
+CSPICE_LIBS += cspiceD
