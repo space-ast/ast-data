@@ -36,11 +36,51 @@ STK_EPHEMERIS_FILES += AST_DATA_DIR/Test/STK/Satellite-v4.3.e
 STK_EPHEMERIS_FILES += AST_DATA_DIR/Test/STK/Satellite-v4.2.e
 STK_EPHEMERIS_FILES += AST_DATA_DIR/Test/STK/Satellite-v4.0.e
 
-STK_SATELLITE_FILES =  AST_DATA_DIR/Test/STK/Satellite.sa
+#DEV_DATA_DIR = AST_DATA_DIR/Dev
+DEV_DATA_DIR = D:/ProgramData/STK11/
+
+STK_SATELLITE_FILES += DEV_DATA_DIR/Scenario5/Satellite1.sa
+STK_SATELLITE_FILES += DEV_DATA_DIR/Scenario5/Satellite2.sa
+STK_SATELLITE_FILES += DEV_DATA_DIR/Scenario5/Satellite3.sa
+
+STK_SATELLITE_FILES += AST_DATA_DIR/Test/STK/Satellite.sa
 STK_SATELLITE_FILES += AST_DATA_DIR/Test/STK/SatelliteHPOP.sa
 
-DEV_DATA_DIR = AST_DATA_DIR/Dev
+
+
+STK_AIRCRAFT_FILES += DEV_DATA_DIR/Scenario5/Aircraft1.ac
+STK_AIRCRAFT_FILES += DEV_DATA_DIR/Scenario5/Aircraft2.ac
+
+
+
 STK_SCENARIO_FILE = DEV_DATA_DIR/Scenario5/Scenario5.sc
 
-STK_FACILITY_FILES = DEV_DATA_DIR/Scenario5/Facility1.f
+STK_FACILITY_FILES  = DEV_DATA_DIR/Scenario5/Facility1.f
 STK_FACILITY_FILES += DEV_DATA_DIR/Scenario5/Facility2.f
+
+
+STK_TARGET_FILES  = DEV_DATA_DIR/Scenario5/Ab_Band.t
+
+STK_PLACE_FILES  = DEV_DATA_DIR/Scenario5/A.plc
+
+STK_SENSOR_FILES = DEV_DATA_DIR/Scenario5/FOVComplexConic.sn
+STK_SENSOR_FILES += DEV_DATA_DIR/Scenario5/FOVCustom.sn
+STK_SENSOR_FILES += DEV_DATA_DIR/Scenario5/FOVHalfPower.sn
+STK_SENSOR_FILES += DEV_DATA_DIR/Scenario5/FOVRectangular.sn
+STK_SENSOR_FILES += DEV_DATA_DIR/Scenario5/FOVSAR.sn
+STK_SENSOR_FILES += DEV_DATA_DIR/Scenario5/FOVSimpleConic.sn
+
+STK_MCSSEGMENT_FILES += DEV_DATA_DIR/Scenario5/Astrogator/MCS_Segments/Follow2.MCSSegment
+STK_MCSSEGMENT_FILES += DEV_DATA_DIR/Scenario5/Astrogator/MCS_Segments/InitialState2.MCSSegment
+
+STK_PROPAGATOR_FILES += DEV_DATA_DIR/Scenario5/Astrogator/Propagators/CisLunar2.Propagator
+STK_PROPAGATOR_FILES += DEV_DATA_DIR/Scenario5/Astrogator/Propagators/Earth_HPOP.Propagator
+
+
+STK_INITIALSTATE_FILES += DEV_DATA_DIR/Scenario5/Astrogator/MCS_Segments/initialstate.MCSSegment
+
+STK_SEQUENCE_FILES += DEV_DATA_DIR/Scenario5/Astrogator/MCS_Segments/Sequence1.MCSSegment
+
+STK_PROPAGATE_FILES += DEV_DATA_DIR/Scenario5/Astrogator/MCS_Segments/Propagate1.MCSSegment
+
+STK_HOHMANNTRANSFER_FILE = DEV_DATA_DIR/Scenario5/Astrogator/MCS_Segments/Examples/Hohmann_Transfer1.MCSSegment
