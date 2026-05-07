@@ -1,0 +1,68 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "AsStateTrigger" Name = "VBMeanRev">
+    <OBJECT Class = "bool" Name = "Active"> False </OBJECT>
+    <OBJECT Class = "container" Name = "BeforeConditionsSelected" />
+    <OBJECT Class = "ListLink" Name = "BeforeConditions" />
+    <OBJECT Class = "AttrCon" Name = "CalcObjectAttributes">
+        <OBJECT Class = "container" Name = "CalcArgumentsSelected" />
+        <OBJECT Class = "ListLink" Name = "CalcArguments">
+            <STRING>&quot;Mean_Orbit_Period&quot;</STRING>
+            <STRING>&quot;Duration&quot;</STRING>
+        </OBJECT>
+        <OBJECT Class = "string" Name = "Category"> &quot;Scripts&quot; </OBJECT>
+        <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+        <OBJECT Class = "string" Name = "Description"> &quot;Calculation produced by a VBScript inline function&quot; </OBJECT>
+        <OBJECT Class = "string" Name = "InlineFunc"> &quot;Duration/Mean_Orbit_Period&quot; </OBJECT>
+        <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+        <OBJECT Class = "container" Name = "ShooterControls" />
+        <OBJECT Class = "int" Name = "STKVersion"> 1160 </OBJECT>
+        <OBJECT Class = "string" Name = "Type"> &quot;CAgAsStateCalcVBScript&quot; </OBJECT>
+        <OBJECT Class = "string" Name = "UnitDimension"> &quot;Unitless&quot; </OBJECT>
+        <OBJECT Class = "string" Name = "UserComment"> &quot;Calculation produced by a VBScript inline function&quot; </OBJECT>
+        <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "link" Name = "CalcObject">
+        <OBJECT Class = "AsStateCalc" Name = "VBMeanRev">
+            <OBJECT Class = "container" Name = "CalcArgumentsSelected" />
+            <OBJECT Class = "ListLink" Name = "CalcArguments">
+                <STRING>&quot;Mean_Orbit_Period&quot;</STRING>
+                <STRING>&quot;Duration&quot;</STRING>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "Category"> &quot;Scripts&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;Calculation produced by a VBScript inline function&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "InlineFunc"> &quot;Duration/Mean_Orbit_Period&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+            <OBJECT Class = "container" Name = "ShooterControls" />
+            <OBJECT Class = "int" Name = "STKVersion"> 1160 </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;CAgAsStateCalcVBScript&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "UnitDimension"> &quot;Unitless&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;Calculation produced by a VBScript inline function&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+        </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "string" Name = "Category"> &quot;@Top&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+    <OBJECT Class = "string" Name = "Comment"> &quot;User-supplied comment&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Condition"> &quot;Cross Either (Inc.or Dec.)&quot; </OBJECT>
+    <OBJECT Class = "container" Name = "ConstraintsSelected" />
+    <OBJECT Class = "ListLink" Name = "Constraints" />
+    <OBJECT Class = "string" Name = "Description"> &quot;Stop on a specified value using a specifed calculation object&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Dimension"> &quot;&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "Inherited"> True </OBJECT>
+    <OBJECT Class = "int" Name = "MaxTripTimes"> 10000 </OBJECT>
+    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+    <OBJECT Class = "int" Name = "RepeatCount"> 1 </OBJECT>
+    <OBJECT Class = "link" Name = "Sequence">
+        <OBJECT Class = "string" Name = ""> &quot;STOP&quot; </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "container" Name = "ShooterControls" />
+    <OBJECT Class = "int" Name = "STKVersion"> 1160 </OBJECT>
+    <OBJECT Class = "double" Name = "Tolerance"> 1e-06 &quot;&quot; </OBJECT>
+    <OBJECT Class = "double" Name = "TripValue"> 1 &quot;&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Type"> &quot;UserSelect&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "UserComment"> &quot;Stop on a specified value using a specifed calculation object&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+</OBJECT>
+</STKOBJECT>

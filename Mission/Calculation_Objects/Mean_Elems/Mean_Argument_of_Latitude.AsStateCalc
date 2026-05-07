@@ -1,0 +1,15 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "AsStateCalc" Name = "Mean_Argument_of_Latitude">
+     <OBJECT Class = "string" Name = "AxCM_Interface"> "AsStateCalc" </OBJECT>
+     <OBJECT Class = "link" Name = "CoordSystem">
+          <OBJECT Class = "string" Name = ""> "Earth_Centered_Mean_J2000" </OBJECT>
+     </OBJECT>
+     <OBJECT Class = "string" Name = "Description"> "Sum of argument of periapsis and true anomaly" </OBJECT>
+     <OBJECT Class = "string" Name = "ElementType"> "Kozai-Izsak Mean" </OBJECT>
+     <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+     <OBJECT Class = "string" Name = "Type"> "CAgAsStateCalcArgLat" </OBJECT>
+     <OBJECT Class = "string" Name = "UserComment"> "Kozai-Izsak mean sum of argument of periapsis and true anomaly" </OBJECT>
+     <OBJECT Class = "string" Name = "Version"> "1.0.0 a" </OBJECT>
+</OBJECT>
+</STKOBJECT>

@@ -1,0 +1,33 @@
+# N-Plate model plate definition file
+# The choice of frames are
+#       B = Body frame
+#       S = 2 Degree of freedom solar panel frame (normal always toward Sun)
+#       A = 1 Degree of freedom solar panel frame (normal towards Sun but constrained by single rotation axis)
+
+Version 1.0
+
+# DragCd formulation indicates that panel size and orientation will be followed by drag coefficient
+
+Formulation DragCd
+
+Begin Plates
+
+# The parameters must be space, comma, or tab delimited
+# Group names define estimation parameters - 1 scale factor is estimated for each group
+# Record content is the same for 2 degree of freedom solar panels ('S') and fixed in body plates ('B')
+
+# [Plate Name] [Group Name] [Plate Type] [Area (m^2)]   [Unit Normal Vector (X, Y, Z)]  [Drag Coeff.]
+   SolarPanel   SolarPanels      S           60.0           0.0    0.0     1.0             2.5      
+     PlusZ         Body          B            5.0           0.0    0.0     1.0             1.5      
+     MinusZ        Body          B            5.0           0.0    0.0    -1.0             1.5      
+     PlusY         Body          B            5.0           0.0    1.0     0.0             1.5      
+     MinusY        Body          B            5.0           0.0   -1.0     0.0             1.5      
+     PlusX         Body          B            5.0           1.0    0.0     0.0             1.5      
+     MinusX        Body          B            5.0          -1.0    0.0     0.0             1.5      
+
+# For 1 degree of freedom solar panels which rotate about an axis, the axis definition replaces the normal vector
+
+# [Plate Name] [Group Name] [Plate Type] [Area (m^2)]   [ Unit Axis Vector (X, Y, Z) ]  [Drag Coeff.]
+    AxisPanel   SolarPanels      A            5.0           0.0    0.0     1.0             2.3      
+
+End Plates

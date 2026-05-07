@@ -83,4 +83,6 @@ STK_SEQUENCE_FILES += DEV_DATA_DIR/Scenario5/Astrogator/MCS_Segments/Sequence1.M
 
 STK_PROPAGATE_FILES += DEV_DATA_DIR/Scenario5/Astrogator/MCS_Segments/Propagate1.MCSSegment
 
-STK_HOHMANNTRANSFER_FILE = DEV_DATA_DIR/Scenario5/Astrogator/MCS_Segments/Examples/Hohmann_Transfer1.MCSSegment
+STK_HOHMANNT_RANSFER_FILE = AST_DATA_DIR/Mission/MCS_Segments/ExamplesOld/Hohmann_Transfer.MCSSegment
+
+STK_GEO_RENDEZVOUS_FILE = AST_DATA_DIR/Mission/MCS_Segments/ExamplesOld/GEO_Rendezvous.MCSSegment

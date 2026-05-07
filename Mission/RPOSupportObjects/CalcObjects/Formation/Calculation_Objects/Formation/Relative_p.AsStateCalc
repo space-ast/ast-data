@@ -1,0 +1,18 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "AsStateCalc" Name = "Relative_p">
+    <OBJECT Class = "link" Name = "CalcObject">
+        <OBJECT Class = "string" Name = ""> &quot;Equinoctial_p&quot; </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "string" Name = "Category"> &quot;Formation&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+    <OBJECT Class = "string" Name = "Description"> &quot;Relative value of a specified function compared to the reference satellite&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+    <OBJECT Class = "string" Name = "ReferenceSelection"> &quot;Use Basic-&gt;Reference&quot; </OBJECT>
+    <OBJECT Class = "container" Name = "ShooterControls" />
+    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+    <OBJECT Class = "string" Name = "Type"> &quot;CAgAsStateCalcDeltaFromMaster&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "UserComment"> &quot;Relative value of a specified function compared to the reference satellite&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+</OBJECT>
+</STKOBJECT>

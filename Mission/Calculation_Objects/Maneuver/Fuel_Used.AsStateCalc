@@ -1,0 +1,15 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "AsStateCalc" Name = "Fuel_Used">
+    <OBJECT Class = "link" Name = "CalcObject">
+        <OBJECT Class = "string" Name = ""> &quot;FuelMass&quot; </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "string" Name = "Description"> &quot;Difference of a specified function&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "DifferenceOrderToUse"> &quot;Initial Minus Current&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+    <OBJECT Class = "container" Name = "ShooterControls" />
+    <OBJECT Class = "string" Name = "Type"> &quot;CAgAsStateCalcDifference&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "UserComment"> &quot;Fuel mass used during a segment&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+</OBJECT>
+</STKOBJECT>

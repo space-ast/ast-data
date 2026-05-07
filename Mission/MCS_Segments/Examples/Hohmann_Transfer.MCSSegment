@@ -1,0 +1,1106 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "MCSSegment" Name = "Hohmann_Transfer">
+    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+    <OBJECT Class = "string" Name = "Category"> &quot;Examples&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Description"> &quot;Sequence of segments&quot; </OBJECT>
+    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "bool" Name = "GenerateEphemeris"> True </OBJECT>
+    <OBJECT Class = "string" Name = "InputDirection"> &quot;Forward&quot; </OBJECT>
+    <OBJECT Class = "int" Name = "RepeatCount"> 1 </OBJECT>
+    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+    <OBJECT Class = "link" Name = "ScriptingTool">
+        <OBJECT Class = "TargeterProfile" Name = "Scripting_Tool">
+            <OBJECT Class = "ListLink" Name = "Attributes">
+                <OBJECT Class = "ScriptingToolAttr" Name = "StopOnPeriapsisCoast">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;StoppingConditions.Periapsis.Active&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Prop_To_First_Burn.Prop_To_Apses&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Whether the periapsis stopping condition is on in the initial coast&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "StopOnApoapsisCoast">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;StoppingConditions.Apoapsis.Active&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Prop_To_First_Burn.Prop_To_Apses&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Whether the apoapsis stopping condition is on for initial coast&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "StopOnPeriapsisTransfer">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;StoppingConditions.Periapsis.Active&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Target_First_Burn.Prop_To_Apses&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Whether the periapsis stopping condition is on for transfer&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "StopOnApoapsisTransfer">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;StoppingConditions.Apoapsis.Active&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Target_First_Burn.Prop_To_Apses&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Whether the apoapsis stopping condition is on for transfer&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "SkipInitialCoast">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;RetState&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Prop_To_First_Burn.Skip_If_Not_Needed&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Whether to skip the prop to first burn sequence (because we&apos;re already there)&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "DesiredRMagScript">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;Profiles.Burn1_Initial_Guess.Parameters.FinalRMag.ParamValue&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Target_First_Burn&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;km&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Desired Value for the first targeter&apos;s initial guess script&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "DesiredRMagDC">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;Profiles.Target_Transfer.Results.Prop_To_Apses_:_R_Mag.Desired&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Target_First_Burn&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;km&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Desired Value for the first targeter&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+            <OBJECT Class = "ListLink" Name = "CalcObjects">
+                <OBJECT Class = "AgScriptingToolCalcObjWrap" Name = "CurrentApoapsisMag">
+                    <OBJECT Class = "link" Name = "CalcObject">
+                        <OBJECT Class = "AsStateCalc" Name = "Radius_Of_Apoapsis">
+                            <OBJECT Class = "string" Name = "Category"> &quot;Keplerian Elems&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "CentralBody">
+                                <OBJECT Class = "string" Name = ""> &quot;Earth&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Radius at apoapsis of the conic orbit&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ElementType"> &quot;Osculating&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcRadiusOfApoapsis&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Radius at apoapsis of the conic orbit&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined calc object&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgAsStateCalc&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;km&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined calc object&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "AgScriptingToolCalcObjWrap" Name = "CurrentEccentricity">
+                    <OBJECT Class = "link" Name = "CalcObject">
+                        <OBJECT Class = "AsStateCalc" Name = "Eccentricity">
+                            <OBJECT Class = "string" Name = "Category"> &quot;Keplerian Elems&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "CentralBody">
+                                <OBJECT Class = "string" Name = ""> &quot;Earth&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Eccentricity of the conic orbit&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ElementType"> &quot;Osculating&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcEccentricity&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Eccentricity of the conic orbit&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined calc object&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgAsStateCalc&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined calc object&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "AgScriptingToolCalcObjWrap" Name = "CurrentTrueAnomaly">
+                    <OBJECT Class = "link" Name = "CalcObject">
+                        <OBJECT Class = "AsStateCalc" Name = "True_Anomaly">
+                            <OBJECT Class = "string" Name = "Category"> &quot;Keplerian Elems&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "CentralBody">
+                                <OBJECT Class = "string" Name = ""> &quot;Earth&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Angular distance between the orbiting object and periapsis&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ElementType"> &quot;Osculating&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcTrueAnomaly&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Angular distance between the orbiting object and periapsis&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined calc object&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgAsStateCalc&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;deg&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined calc object&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;-Scripting Tool-&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Language"> &quot;JScript&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Mode"> &quot;Active&quot; </OBJECT>
+            <OBJECT Class = "ListLink" Name = "Parameters">
+                <OBJECT Class = "ScriptingToolParameter" Name = "FinalRMag">
+                    <OBJECT Class = "string" Name = "Description"> &quot;Script Parameter&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "InheritValue"> False </OBJECT>
+                    <OBJECT Class = "double" Name = "MaxValue"> 1.797693134862316e+308 m </OBJECT>
+                    <OBJECT Class = "double" Name = "MinValue"> 6578000 m </OBJECT>
+                    <OBJECT Class = "string" Name = "ParamType"> &quot;Quantity&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "ParamValue"> 10000000 m </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgScriptingToolParameter&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UnitDimension"> &quot;DistanceUnit&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;km&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxValue"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMinValue"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Radius of the final orbit.  Must be greater than 6578 km.&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "ScriptStatements"> &quot;// This script sets up a Hohmann transfer sequence.
+// The sequence will:
+// 1) Propagate to the start of the first burn (an apses),
+// 2) perform the first burn to get on the transfer orbit,
+// 3) propagate along the transfer orbit until the other apses is reached, and
+// 4) perform the second burn to circularize.
+//
+// The script takes as input the final orbit&apos;s magnitude.  It passes that value to the target sequence which calculates the first burn.
+// The script determines if the transfer will raise or lower the orbit, and sets up the initial sequence (step 1) accordingly.
+// If we are already at the correct location for the first burn, step 1) can be skipped by turning on the return segment.
+
+
+var startTrueAnomA; // true anomaly where transfer should start
+var startTrueAnomB; // there are two so we can compare against 0 and 360 deg.
+
+// Set up stopping conditions based on whether we are lowering or raising the initial orbit.
+// If the final orbit is above the current apoapsis, do the first burn at periapsis;
+// otherwise, do the first burn at apoapsis.
+if (FinalRMag &gt; CurrentApoapsisMag)
+{
+   StopOnPeriapsisCoast = true;
+   StopOnApoapsisCoast = false;
+   StopOnPeriapsisTransfer = false;
+   StopOnApoapsisTransfer = true;
+   startTrueAnomA = 0.0;
+   startTrueAnomB = 360.0;
+}
+else
+{
+   StopOnPeriapsisCoast = false;
+   StopOnApoapsisCoast = true;
+   StopOnPeriapsisTransfer = true;
+   StopOnApoapsisTransfer = false;
+   startTrueAnomA = 180.0;
+   startTrueAnomB = 180.0;
+}
+
+// if we are in a circular orbit, or if we are already at the right apses for the first burn, we can skip the coast to first burn sequence
+if ( CurrentEccentricity &lt; 0.01 || Math.abs(startTrueAnomA - CurrentTrueAnomaly) &lt; 0.01 || Math.abs(startTrueAnomB - CurrentTrueAnomaly) &lt; 0.01 )
+{
+   SkipInitialCoast = &quot;Enable&quot;;
+}
+else
+{
+   SkipInitialCoast = &quot;Disable&quot;;
+}
+
+DesiredRMagScript = FinalRMag;  // for the script that will determine an initial guess based on a two-body transfer
+DesiredRMagDC = FinalRMag; // for the differential corrector that will correct the initial guess with a full force model
+
+&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingTool&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;-Scripting Tool-&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+        </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "int" Name = "SegmentColor"> 65280 </OBJECT>
+    <OBJECT Class = "ListLink" Name = "SegmentList">
+        <OBJECT Class = "MCSSegment" Name = "Prop_To_First_Burn">
+            <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;Sequence of segments&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "bool" Name = "GenerateEphemeris"> True </OBJECT>
+            <OBJECT Class = "string" Name = "InputDirection"> &quot;Forward&quot; </OBJECT>
+            <OBJECT Class = "int" Name = "RepeatCount"> 1 </OBJECT>
+            <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+            <OBJECT Class = "int" Name = "SegmentColor"> 65280 </OBJECT>
+            <OBJECT Class = "ListLink" Name = "SegmentList">
+                <OBJECT Class = "MCSSegment" Name = "Skip_If_Not_Needed">
+                    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Returns to calling sequence&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "RetState"> &quot;Disable&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;Return&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Returns to calling sequence&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "MCSSegment" Name = "Prop_To_Apses">
+                    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Propagates until stopping conditions are met&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "MaxPropTime"> 8640000 sec </OBJECT>
+                    <OBJECT Class = "double" Name = "MinPropTime"> 0 sec </OBJECT>
+                    <OBJECT Class = "bool" Name = "OverrideMaxPropTime"> True </OBJECT>
+                    <OBJECT Class = "link" Name = "Propagator">
+                        <OBJECT Class = "string" Name = ""> &quot;Earth_HPOP_Default_v8-1-1&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+                    <OBJECT Class = "int" Name = "SegmentColor"> 65280 </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "StoppingConditions">
+                        <OBJECT Class = "AsStateTrigger" Name = "Periapsis">
+                            <OBJECT Class = "bool" Name = "Active"> True </OBJECT>
+                            <OBJECT Class = "AttrCon" Name = "CalcObjectAttributes">
+                                <OBJECT Class = "link" Name = "CentralBody">
+                                    <OBJECT Class = "string" Name = ""> &quot;Earth&quot; </OBJECT>
+                                </OBJECT>
+                                <OBJECT Class = "string" Name = "Description"> &quot;The cosine of the vertical flight path angle&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "Type"> &quot;CAgAsStateCosineVFPA&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "UserComment"> &quot;The cosine of the vertical flight path angle&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Comment"> &quot;User-supplied comment&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Stop at the point closest to the origin&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Dimension"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Inherited"> True </OBJECT>
+                            <OBJECT Class = "int" Name = "MaxTripTimes"> 10000 </OBJECT>
+                            <OBJECT Class = "int" Name = "RepeatCount"> 1 </OBJECT>
+                            <OBJECT Class = "link" Name = "Sequence">
+                                <OBJECT Class = "string" Name = ""> &quot;STOP&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "double" Name = "Tolerance"> 1e-007 &quot;&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;Periapsis&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Stop at the point closest to the origin&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                        <OBJECT Class = "AsStateTrigger" Name = "Apoapsis">
+                            <OBJECT Class = "bool" Name = "Active"> True </OBJECT>
+                            <OBJECT Class = "AttrCon" Name = "CalcObjectAttributes">
+                                <OBJECT Class = "link" Name = "CentralBody">
+                                    <OBJECT Class = "string" Name = ""> &quot;Earth&quot; </OBJECT>
+                                </OBJECT>
+                                <OBJECT Class = "string" Name = "Description"> &quot;The cosine of the vertical flight path angle&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "Type"> &quot;CAgAsStateCosineVFPA&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "UserComment"> &quot;The cosine of the vertical flight path angle&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Comment"> &quot;User-supplied comment&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Stop at the point farthest from the origin&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Dimension"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Inherited"> True </OBJECT>
+                            <OBJECT Class = "int" Name = "MaxTripTimes"> 10000 </OBJECT>
+                            <OBJECT Class = "int" Name = "RepeatCount"> 1 </OBJECT>
+                            <OBJECT Class = "link" Name = "Sequence">
+                                <OBJECT Class = "string" Name = ""> &quot;STOP&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "double" Name = "Tolerance"> 1e-007 &quot;&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;Apoapsis&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Stop at the point farthest from the origin&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;Propagate&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxPropTimeWarn"> True </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxPropTime"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Propagates until stopping conditions are met&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "MCSSegment" Name = "-">
+                    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;End Of Sequence&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;End&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;End Of Sequence&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "StateToPass"> &quot;Final&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;Sequence&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;Sequence of segments&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+        </OBJECT>
+        <OBJECT Class = "MCSSegment" Name = "Target_First_Burn">
+            <OBJECT Class = "string" Name = "Action"> &quot;Run active profiles&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+            <OBJECT Class = "bool" Name = "ContinueOnFailure"> False </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;Sequence that runs targeting profiles&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "bool" Name = "LocalTargLevelLog"> False </OBJECT>
+            <OBJECT Class = "ListLink" Name = "Profiles">
+                <OBJECT Class = "TargeterProfile" Name = "Burn1_Initial_Guess">
+                    <OBJECT Class = "ListLink" Name = "Attributes">
+                        <OBJECT Class = "ScriptingToolAttr" Name = "Burn1InitialGuess">
+                            <OBJECT Class = "string" Name = "Attribute"> &quot;ImpulsiveMnvr.Cartesian.X&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "Object">
+                                <OBJECT Class = "string" Name = ""> &quot;Segments.First_Burn&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km/sec&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Initial guess for the first deltaV&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "CalcObjects">
+                        <OBJECT Class = "AgScriptingToolCalcObjWrap" Name = "CurrentRMag">
+                            <OBJECT Class = "link" Name = "CalcObject">
+                                <OBJECT Class = "AsStateCalc" Name = "R_Mag">
+                                    <OBJECT Class = "string" Name = "Category"> &quot;Spherical Elems&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Description"> &quot;Magnitude of position vector&quot; </OBJECT>
+                                    <OBJECT Class = "link" Name = "ReferencePoint">
+                                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Center&quot; </OBJECT>
+                                    </OBJECT>
+                                    <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcRMag&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "UserComment"> &quot;Magnitude of position vector&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                                </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;User defined calc object&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AgAsStateCalc&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Current orbit radius&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                        <OBJECT Class = "AgScriptingToolCalcObjWrap" Name = "CurrentVMag">
+                            <OBJECT Class = "link" Name = "CalcObject">
+                                <OBJECT Class = "AsStateCalc" Name = "V_Mag">
+                                    <OBJECT Class = "string" Name = "Category"> &quot;Spherical Elems&quot; </OBJECT>
+                                    <OBJECT Class = "link" Name = "CoordSystem">
+                                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                                    </OBJECT>
+                                    <OBJECT Class = "string" Name = "Description"> &quot;Magnitude of velocity vector&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcVMag&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "UserComment"> &quot;Magnitude of velocity vector&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                                </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;User defined calc object&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AgAsStateCalc&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km/sec&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Current orbit velocity&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                        <OBJECT Class = "AgScriptingToolCalcObjWrap" Name = "mu">
+                            <OBJECT Class = "link" Name = "CalcObject">
+                                <OBJECT Class = "AsStateCalc" Name = "Gravitational_Parameter">
+                                    <OBJECT Class = "string" Name = "Category"> &quot;Constants&quot; </OBJECT>
+                                    <OBJECT Class = "link" Name = "CentralBody">
+                                        <OBJECT Class = "string" Name = ""> &quot;Earth&quot; </OBJECT>
+                                    </OBJECT>
+                                    <OBJECT Class = "string" Name = "Description"> &quot;Gravitational Parameter of a central body&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "GravityFile"> &quot;STKData\CentralBodies\Earth\WGS84_EGM96.grv&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "GravSource"> &quot;Cb File&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcMu&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "UserComment"> &quot;Gravitational Parameter of a central body&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                                </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;User defined calc object&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AgAsStateCalc&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km^3/sec^2&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Gravitational parameter&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;-Scripting Tool-&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Language"> &quot;JScript&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Mode"> &quot;Active&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "Parameters">
+                        <OBJECT Class = "ScriptingToolParameter" Name = "FinalRMag">
+                            <OBJECT Class = "string" Name = "Description"> &quot;Script Parameter&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "InheritValue"> False </OBJECT>
+                            <OBJECT Class = "double" Name = "MaxValue"> 1.797693134862316e+308 m </OBJECT>
+                            <OBJECT Class = "double" Name = "MinValue"> -1.797693134862316e+308 m </OBJECT>
+                            <OBJECT Class = "string" Name = "ParamType"> &quot;Quantity&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "ParamValue"> 10000000 m </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AgScriptingToolParameter&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UnitDimension"> &quot;DistanceUnit&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "UseMaxValue"> False </OBJECT>
+                            <OBJECT Class = "bool" Name = "UseMinValue"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;New Parameter&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "ScriptStatements"> &quot;// Calculate necessary deltaV for transfer
+// FinalRMag parameter is set by the parent sequence
+
+Burn1InitialGuess = Math.sqrt( 2.0 * mu * FinalRMag / CurrentRMag / (CurrentRMag + FinalRMag) ) - CurrentVMag;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingTool&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Calculates deltaV based on Hohmann Transfer&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "TargeterProfile" Name = "Target_Transfer">
+                    <OBJECT Class = "bool" Name = "AddBPlanePointsForNominals"> True </OBJECT>
+                    <OBJECT Class = "bool" Name = "AddBPlanePointsForPerturbations"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "ClearCorrectionsBeforeRun"> True </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "Controls">
+                        <OBJECT Class = "ShooterControl" Name = "First_Burn_:_ImpulsiveMnvr_Cartesian_X">
+                            <OBJECT Class = "bool" Name = "Active"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "ControlName"> &quot;ImpulsiveMnvr.Cartesian.X&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Correction"> 0 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;DeltaV in X Direction of coordinate axes&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Dimension"> &quot;Rate&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "MaxStep"> 100 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "string" Name = "ParentSegmentName"> &quot;First_Burn&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ParentType"> &quot;Maneuver&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Perturbation"> 0.1 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "double" Name = "Scale"> 1 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "string" Name = "SlaveSegments"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Tolerance"> 1e-006 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "double" Name = "TotalCorrection"> 0 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ShooterControl&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km/sec&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "UseCustomUnit"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;DeltaV in X Direction of coordinate axes&quot; </OBJECT>
+                            <OBJECT Class = "container" Name = "Values" />
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.1 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "ConvergenceCriteria"> &quot;Equality constraints within tolerance&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;-Differential Corrector Description-&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "DisplayPopup"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "FiniteDifferenceMethod"> &quot;Forward Difference&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "HideInactiveControls"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "HideInactiveResults"> False </OBJECT>
+                    <OBJECT Class = "double" Name = "LineSearchLowerBound"> 1e-006 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "int" Name = "LineSearchMaxNumCalls"> 10 </OBJECT>
+                    <OBJECT Class = "double" Name = "LineSearchTolerance"> 1e-006 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "LineSearchUpperBound"> 10 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "int" Name = "MaximumRunsToLog"> 25 </OBJECT>
+                    <OBJECT Class = "int" Name = "MaxIterations"> 50 </OBJECT>
+                    <OBJECT Class = "string" Name = "Mode"> &quot;Iterate&quot; </OBJECT>
+                    <OBJECT Class = "int" Name = "NumHomotopySteps"> 1 </OBJECT>
+                    <OBJECT Class = "int" Name = "NumIterations"> 1 </OBJECT>
+                    <OBJECT Class = "string" Name = "PerturbationColor"> &quot;Segment Color&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "Results">
+                        <OBJECT Class = "ShooterResult" Name = "Prop_To_Apses_:_R_Mag">
+                            <OBJECT Class = "bool" Name = "Active"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "CalcType"> &quot;AsStateCalcRMag&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Magnitude of position vector&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Desired"> 10000000 m </OBJECT>
+                            <OBJECT Class = "string" Name = "Dimension"> &quot;DistanceUnit&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ParentSegmentName"> &quot;Prop_To_Apses&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ParentType"> &quot;Propagate&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ResultName"> &quot;R_Mag&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Scale"> 1 m </OBJECT>
+                            <OBJECT Class = "double" Name = "Tolerance"> 100 m </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ShooterResult&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "UseCustomUnit"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Magnitude of position vector&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Valid"> False </OBJECT>
+                            <OBJECT Class = "container" Name = "Values" />
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.1 a&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Weight"> 1 &quot;&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "RootFindingAlgorithm"> &quot;Secant Method&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "ScaleControls"> &quot;By initial value&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "ScaleGoals"> &quot;By desired value&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Status"> &quot;Not Initialized&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "StopOnLimitCycleDetection"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;DifferentialCorrector&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseHomotopy"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseLineSearch"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;-Differential Corrector Description-&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.1 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "bool" Name = "ResetInnerTargeters"> False </OBJECT>
+            <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+            <OBJECT Class = "int" Name = "SegmentColor"> 1993170 </OBJECT>
+            <OBJECT Class = "ListLink" Name = "SegmentList">
+                <OBJECT Class = "MCSSegment" Name = "First_Burn">
+                    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Maneuvers satellite with impulsive or finite burn&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "link" Name = "ImpulsiveMnvr">
+                        <OBJECT Class = "MCSSegment" Name = "ImpulsiveMnvr">
+                            <OBJECT Class = "double" Name = "AttFileTimeOffset"> 0 sec </OBJECT>
+                            <OBJECT Class = "int" Name = "AttInterpOrder"> 1 </OBJECT>
+                            <OBJECT Class = "string" Name = "AttitudeControl"> &quot;Thrust Vector&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "AttitudeFile"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "AttitudeLeadDuration"> 0 sec </OBJECT>
+                            <OBJECT Class = "string" Name = "AttitudeRep"> &quot;EulerAngles&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "AttitudeTrailDuration"> 0 sec </OBJECT>
+                            <OBJECT Class = "string" Name = "AttitudeUse"> &quot;Apply&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "BodyConstraintVectorRepresentation"> &quot;Cartesian&quot; </OBJECT>
+                            <OBJECT Class = "AttrCon" Name = "BodyConstraintVector">
+                                <OBJECT Class = "container" Name = "Cartesian">
+                                    <OBJECT Class = "double" Name = "X"> 0 &quot;&quot; </OBJECT>
+                                    <OBJECT Class = "double" Name = "Y"> 0 &quot;&quot; </OBJECT>
+                                    <OBJECT Class = "double" Name = "Z"> 1 &quot;&quot; </OBJECT>
+                                </OBJECT>
+                                <OBJECT Class = "container" Name = "Spherical" />
+                            </OBJECT>
+                            <OBJECT Class = "container" Name = "Cartesian">
+                                <OBJECT Class = "double" Name = "X"> 0 m*sec^-1 </OBJECT>
+                                <OBJECT Class = "double" Name = "Y"> 0 m*sec^-1 </OBJECT>
+                                <OBJECT Class = "double" Name = "Z"> 0 m*sec^-1 </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "ConstraintSign"> &quot;+&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "ConstraintVector">
+                                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth VernalEquinox&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "CoordType"> &quot;Cartesian&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;This is an impulsive maneuver inside a maneuver segment&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "EngineDirection"> &quot;+X&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "EngineModel">
+                                <OBJECT Class = "string" Name = ""> &quot;Constant_Thrust_and_Isp&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "EulerSequence"> &quot;313&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "PropulsionType"> &quot;Engine Model&quot; </OBJECT>
+                            <OBJECT Class = "container" Name = "Quaternion">
+                                <OBJECT Class = "double" Name = "qx"> 0 &quot;&quot; </OBJECT>
+                                <OBJECT Class = "double" Name = "qy"> 0 &quot;&quot; </OBJECT>
+                                <OBJECT Class = "double" Name = "qz"> 0 &quot;&quot; </OBJECT>
+                                <OBJECT Class = "double" Name = "qs"> 1 &quot;&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+                            <OBJECT Class = "container" Name = "Spherical">
+                                <OBJECT Class = "double" Name = "Magnitude"> 0 m*sec^-1 </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "link" Name = "ThrustAxes">
+                                <OBJECT Class = "string" Name = ""> &quot;Satellite VNC(Earth)&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "link" Name = "ThrusterSet">
+                                <OBJECT Class = "string" Name = ""> &quot;Single_Thruster&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;Maneuver:Impulsive&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+                            <OBJECT Class = "bool" Name = "UpdateMass"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;This is an impulsive maneuver inside a maneuver segment&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "MnvrType"> &quot;Impulsive&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+                    <OBJECT Class = "int" Name = "SegmentColor"> 65280 </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls">
+                        <OBJECT Class = "string" Name = "ImpulsiveMnvr.Cartesian.X"> &quot;ImpulsiveMnvr.Cartesian.X&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;Maneuver&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Maneuvers satellite with impulsive or finite burn&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "MCSSegment" Name = "Prop_To_Apses">
+                    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Propagates until stopping conditions are met&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "MaxPropTime"> 8640000 sec </OBJECT>
+                    <OBJECT Class = "double" Name = "MinPropTime"> 0 sec </OBJECT>
+                    <OBJECT Class = "bool" Name = "OverrideMaxPropTime"> True </OBJECT>
+                    <OBJECT Class = "link" Name = "Propagator">
+                        <OBJECT Class = "string" Name = ""> &quot;Earth_HPOP_Default_v8-1-1&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "Results">
+                        <OBJECT Class = "AsStateCalc" Name = "R_Mag">
+                            <OBJECT Class = "string" Name = "Category"> &quot;Spherical Elems&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Magnitude of position vector&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "ReferencePoint">
+                                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Center&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcRMag&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Magnitude of position vector&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+                    <OBJECT Class = "int" Name = "SegmentColor"> 65535 </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "StoppingConditions">
+                        <OBJECT Class = "AsStateTrigger" Name = "Periapsis">
+                            <OBJECT Class = "bool" Name = "Active"> True </OBJECT>
+                            <OBJECT Class = "AttrCon" Name = "CalcObjectAttributes">
+                                <OBJECT Class = "link" Name = "CentralBody">
+                                    <OBJECT Class = "string" Name = ""> &quot;Earth&quot; </OBJECT>
+                                </OBJECT>
+                                <OBJECT Class = "string" Name = "Description"> &quot;The cosine of the vertical flight path angle&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "Type"> &quot;CAgAsStateCosineVFPA&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "UserComment"> &quot;The cosine of the vertical flight path angle&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Comment"> &quot;User-supplied comment&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Stop at the point closest to the origin&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Dimension"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Inherited"> True </OBJECT>
+                            <OBJECT Class = "int" Name = "MaxTripTimes"> 10000 </OBJECT>
+                            <OBJECT Class = "int" Name = "RepeatCount"> 1 </OBJECT>
+                            <OBJECT Class = "link" Name = "Sequence">
+                                <OBJECT Class = "string" Name = ""> &quot;STOP&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "double" Name = "Tolerance"> 1e-007 &quot;&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;Periapsis&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Stop at the point closest to the origin&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                        <OBJECT Class = "AsStateTrigger" Name = "Apoapsis">
+                            <OBJECT Class = "bool" Name = "Active"> True </OBJECT>
+                            <OBJECT Class = "AttrCon" Name = "CalcObjectAttributes">
+                                <OBJECT Class = "link" Name = "CentralBody">
+                                    <OBJECT Class = "string" Name = ""> &quot;Earth&quot; </OBJECT>
+                                </OBJECT>
+                                <OBJECT Class = "string" Name = "Description"> &quot;The cosine of the vertical flight path angle&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "Type"> &quot;CAgAsStateCosineVFPA&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "UserComment"> &quot;The cosine of the vertical flight path angle&quot; </OBJECT>
+                                <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Comment"> &quot;User-supplied comment&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Stop at the point farthest from the origin&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Dimension"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Inherited"> True </OBJECT>
+                            <OBJECT Class = "int" Name = "MaxTripTimes"> 10000 </OBJECT>
+                            <OBJECT Class = "int" Name = "RepeatCount"> 1 </OBJECT>
+                            <OBJECT Class = "link" Name = "Sequence">
+                                <OBJECT Class = "string" Name = ""> &quot;STOP&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "double" Name = "Tolerance"> 1e-007 &quot;&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;Apoapsis&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Stop at the point farthest from the origin&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;Propagate&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxPropTimeWarn"> True </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxPropTime"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Propagates until stopping conditions are met&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "MCSSegment" Name = "-">
+                    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;End Of Sequence&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;End&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;End Of Sequence&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;TargeterSequence&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;Sequence that runs targeting profiles&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "WhenConverged"> &quot;Run to RETURN and continue&quot; </OBJECT>
+        </OBJECT>
+        <OBJECT Class = "MCSSegment" Name = "Target_Second_Burn">
+            <OBJECT Class = "string" Name = "Action"> &quot;Run active profiles&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+            <OBJECT Class = "bool" Name = "ContinueOnFailure"> False </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;Sequence that runs targeting profiles&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "bool" Name = "LocalTargLevelLog"> False </OBJECT>
+            <OBJECT Class = "ListLink" Name = "Profiles">
+                <OBJECT Class = "TargeterProfile" Name = "Burn2_Initial_Guess">
+                    <OBJECT Class = "ListLink" Name = "Attributes">
+                        <OBJECT Class = "ScriptingToolAttr" Name = "Burn2InitialGuess">
+                            <OBJECT Class = "string" Name = "Attribute"> &quot;ImpulsiveMnvr.Cartesian.X&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "Object">
+                                <OBJECT Class = "string" Name = ""> &quot;Segments.Second_Burn&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km/sec&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Initial guess fo rthe second deltaV&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "CalcObjects">
+                        <OBJECT Class = "AgScriptingToolCalcObjWrap" Name = "CurrentRMag">
+                            <OBJECT Class = "link" Name = "CalcObject">
+                                <OBJECT Class = "AsStateCalc" Name = "R_Mag">
+                                    <OBJECT Class = "string" Name = "Category"> &quot;Spherical Elems&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Description"> &quot;Magnitude of position vector&quot; </OBJECT>
+                                    <OBJECT Class = "link" Name = "ReferencePoint">
+                                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Center&quot; </OBJECT>
+                                    </OBJECT>
+                                    <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcRMag&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "UserComment"> &quot;Magnitude of position vector&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                                </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;User defined calc object&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AgAsStateCalc&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Current orbit radius&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                        <OBJECT Class = "AgScriptingToolCalcObjWrap" Name = "CurrentVMag">
+                            <OBJECT Class = "link" Name = "CalcObject">
+                                <OBJECT Class = "AsStateCalc" Name = "V_Mag">
+                                    <OBJECT Class = "string" Name = "Category"> &quot;Spherical Elems&quot; </OBJECT>
+                                    <OBJECT Class = "link" Name = "CoordSystem">
+                                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                                    </OBJECT>
+                                    <OBJECT Class = "string" Name = "Description"> &quot;Magnitude of velocity vector&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcVMag&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "UserComment"> &quot;Magnitude of velocity vector&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                                </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;User defined calc object&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AgAsStateCalc&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km/sec&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Current orbital velocity&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                        <OBJECT Class = "AgScriptingToolCalcObjWrap" Name = "mu">
+                            <OBJECT Class = "link" Name = "CalcObject">
+                                <OBJECT Class = "AsStateCalc" Name = "Gravitational_Parameter">
+                                    <OBJECT Class = "string" Name = "Category"> &quot;Constants&quot; </OBJECT>
+                                    <OBJECT Class = "link" Name = "CentralBody">
+                                        <OBJECT Class = "string" Name = ""> &quot;Earth&quot; </OBJECT>
+                                    </OBJECT>
+                                    <OBJECT Class = "string" Name = "Description"> &quot;Gravitational Parameter of a central body&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "GravityFile"> &quot;STKData\CentralBodies\Earth\WGS84_EGM96.grv&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "GravSource"> &quot;Cb File&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcMu&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "UserComment"> &quot;Gravitational Parameter of a central body&quot; </OBJECT>
+                                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                                </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;User defined calc object&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AgAsStateCalc&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km^3/sec^2&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Gravitational parameter&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;-Scripting Tool-&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Language"> &quot;JScript&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Mode"> &quot;Active&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "Parameters" />
+                    <OBJECT Class = "string" Name = "ScriptStatements"> &quot;// Calculate necessary deltaV to circularize
+
+var vCirc = Math.sqrt(mu/CurrentRMag);
+
+Burn2InitialGuess = vCirc - CurrentVMag;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingTool&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Calculates deltaV based on Hohmann Transfer&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "TargeterProfile" Name = "Circularize">
+                    <OBJECT Class = "bool" Name = "AddBPlanePointsForNominals"> True </OBJECT>
+                    <OBJECT Class = "bool" Name = "AddBPlanePointsForPerturbations"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "ClearCorrectionsBeforeRun"> True </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "Controls">
+                        <OBJECT Class = "ShooterControl" Name = "Second_Burn_:_ImpulsiveMnvr_Cartesian_X">
+                            <OBJECT Class = "bool" Name = "Active"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "ControlName"> &quot;ImpulsiveMnvr.Cartesian.X&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Correction"> 0 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;DeltaV in X Direction of coordinate axes&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Dimension"> &quot;Rate&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "MaxStep"> 100 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "string" Name = "ParentSegmentName"> &quot;Second_Burn&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ParentType"> &quot;Maneuver&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Perturbation"> 0.1 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "double" Name = "Scale"> 1 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "string" Name = "SlaveSegments"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Tolerance"> 1e-006 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "double" Name = "TotalCorrection"> 0 m*sec^-1 </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ShooterControl&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;km/sec&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "UseCustomUnit"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;DeltaV in X Direction of coordinate axes&quot; </OBJECT>
+                            <OBJECT Class = "container" Name = "Values" />
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.1 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "ConvergenceCriteria"> &quot;Equality constraints within tolerance&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;-Differential Corrector Description-&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "DisplayPopup"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "FiniteDifferenceMethod"> &quot;Forward Difference&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "HideInactiveControls"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "HideInactiveResults"> False </OBJECT>
+                    <OBJECT Class = "double" Name = "LineSearchLowerBound"> 1e-006 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "int" Name = "LineSearchMaxNumCalls"> 10 </OBJECT>
+                    <OBJECT Class = "double" Name = "LineSearchTolerance"> 1e-006 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "LineSearchUpperBound"> 10 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "int" Name = "MaximumRunsToLog"> 25 </OBJECT>
+                    <OBJECT Class = "int" Name = "MaxIterations"> 50 </OBJECT>
+                    <OBJECT Class = "string" Name = "Mode"> &quot;Iterate&quot; </OBJECT>
+                    <OBJECT Class = "int" Name = "NumHomotopySteps"> 1 </OBJECT>
+                    <OBJECT Class = "int" Name = "NumIterations"> 0 </OBJECT>
+                    <OBJECT Class = "string" Name = "PerturbationColor"> &quot;Segment Color&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "Results">
+                        <OBJECT Class = "ShooterResult" Name = "Second_Burn_:_Eccentricity">
+                            <OBJECT Class = "bool" Name = "Active"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "CalcType"> &quot;AsStateCalcEccentricity&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Eccentricity of the conic orbit&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Desired"> 0 &quot;&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Dimension"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ParentSegmentName"> &quot;Second_Burn&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ParentType"> &quot;Maneuver&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ResultName"> &quot;Eccentricity&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Scale"> 1 &quot;&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Tolerance"> 0.0001 &quot;&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ShooterResult&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Unit"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "UseCustomUnit"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Eccentricity of the conic orbit&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Valid"> False </OBJECT>
+                            <OBJECT Class = "container" Name = "Values" />
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.1 a&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "Weight"> 1 &quot;&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "RootFindingAlgorithm"> &quot;Secant Method&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "ScaleControls"> &quot;By initial value&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "ScaleGoals"> &quot;By desired value&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Status"> &quot;Not Initialized&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "StopOnLimitCycleDetection"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;DifferentialCorrector&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseHomotopy"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseLineSearch"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;-Differential Corrector Description-&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.1 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "bool" Name = "ResetInnerTargeters"> False </OBJECT>
+            <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+            <OBJECT Class = "int" Name = "SegmentColor"> 1993170 </OBJECT>
+            <OBJECT Class = "ListLink" Name = "SegmentList">
+                <OBJECT Class = "MCSSegment" Name = "Second_Burn">
+                    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Maneuvers satellite with impulsive or finite burn&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "link" Name = "ImpulsiveMnvr">
+                        <OBJECT Class = "MCSSegment" Name = "ImpulsiveMnvr">
+                            <OBJECT Class = "double" Name = "AttFileTimeOffset"> 0 sec </OBJECT>
+                            <OBJECT Class = "int" Name = "AttInterpOrder"> 1 </OBJECT>
+                            <OBJECT Class = "string" Name = "AttitudeControl"> &quot;Thrust Vector&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "AttitudeFile"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "AttitudeLeadDuration"> 0 sec </OBJECT>
+                            <OBJECT Class = "string" Name = "AttitudeRep"> &quot;EulerAngles&quot; </OBJECT>
+                            <OBJECT Class = "double" Name = "AttitudeTrailDuration"> 0 sec </OBJECT>
+                            <OBJECT Class = "string" Name = "AttitudeUse"> &quot;Apply&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "BodyConstraintVectorRepresentation"> &quot;Cartesian&quot; </OBJECT>
+                            <OBJECT Class = "AttrCon" Name = "BodyConstraintVector">
+                                <OBJECT Class = "container" Name = "Cartesian">
+                                    <OBJECT Class = "double" Name = "X"> 0 &quot;&quot; </OBJECT>
+                                    <OBJECT Class = "double" Name = "Y"> 0 &quot;&quot; </OBJECT>
+                                    <OBJECT Class = "double" Name = "Z"> 1 &quot;&quot; </OBJECT>
+                                </OBJECT>
+                                <OBJECT Class = "container" Name = "Spherical" />
+                            </OBJECT>
+                            <OBJECT Class = "container" Name = "Cartesian">
+                                <OBJECT Class = "double" Name = "X"> 0 m*sec^-1 </OBJECT>
+                                <OBJECT Class = "double" Name = "Y"> 0 m*sec^-1 </OBJECT>
+                                <OBJECT Class = "double" Name = "Z"> 0 m*sec^-1 </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "ConstraintSign"> &quot;+&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "ConstraintVector">
+                                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth VernalEquinox&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "CoordType"> &quot;Cartesian&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;This is an impulsive maneuver inside a maneuver segment&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "EngineDirection"> &quot;+X&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "EngineModel">
+                                <OBJECT Class = "string" Name = ""> &quot;Constant_Thrust_and_Isp&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "EulerSequence"> &quot;313&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "PropulsionType"> &quot;Engine Model&quot; </OBJECT>
+                            <OBJECT Class = "container" Name = "Quaternion">
+                                <OBJECT Class = "double" Name = "qx"> 0 &quot;&quot; </OBJECT>
+                                <OBJECT Class = "double" Name = "qy"> 0 &quot;&quot; </OBJECT>
+                                <OBJECT Class = "double" Name = "qz"> 0 &quot;&quot; </OBJECT>
+                                <OBJECT Class = "double" Name = "qs"> 1 &quot;&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+                            <OBJECT Class = "container" Name = "Spherical">
+                                <OBJECT Class = "double" Name = "Magnitude"> 0 m*sec^-1 </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "link" Name = "ThrustAxes">
+                                <OBJECT Class = "string" Name = ""> &quot;Satellite VNC(Earth)&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "link" Name = "ThrusterSet">
+                                <OBJECT Class = "string" Name = ""> &quot;Single_Thruster&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;Maneuver:Impulsive&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+                            <OBJECT Class = "bool" Name = "UpdateMass"> False </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;This is an impulsive maneuver inside a maneuver segment&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "MnvrType"> &quot;Impulsive&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "Results">
+                        <OBJECT Class = "AsStateCalc" Name = "Eccentricity">
+                            <OBJECT Class = "string" Name = "Category"> &quot;Keplerian Elems&quot; </OBJECT>
+                            <OBJECT Class = "link" Name = "CentralBody">
+                                <OBJECT Class = "string" Name = ""> &quot;Earth&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Eccentricity of the conic orbit&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "ElementType"> &quot;Osculating&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcEccentricity&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Eccentricity of the conic orbit&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+                    <OBJECT Class = "int" Name = "SegmentColor"> 65280 </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls">
+                        <OBJECT Class = "string" Name = "ImpulsiveMnvr.Cartesian.X"> &quot;ImpulsiveMnvr.Cartesian.X&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;Maneuver&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Maneuvers satellite with impulsive or finite burn&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "MCSSegment" Name = "-">
+                    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;End Of Sequence&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;End&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;End Of Sequence&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;TargeterSequence&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;Sequence that runs targeting profiles&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "WhenConverged"> &quot;Run to RETURN and continue&quot; </OBJECT>
+        </OBJECT>
+        <OBJECT Class = "MCSSegment" Name = "Prop_Once_Around">
+            <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;Propagates until stopping conditions are met&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "MaxPropTime"> 8640000 sec </OBJECT>
+            <OBJECT Class = "double" Name = "MinPropTime"> 0 sec </OBJECT>
+            <OBJECT Class = "bool" Name = "OverrideMaxPropTime"> True </OBJECT>
+            <OBJECT Class = "link" Name = "Propagator">
+                <OBJECT Class = "string" Name = ""> &quot;Earth_HPOP_Default_v8-1-1&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+            <OBJECT Class = "int" Name = "SegmentColor"> 16711935 </OBJECT>
+            <OBJECT Class = "ListLink" Name = "StoppingConditions">
+                <OBJECT Class = "AsStateTrigger" Name = "Once_Around">
+                    <OBJECT Class = "bool" Name = "Active"> True </OBJECT>
+                    <OBJECT Class = "link" Name = "CalcObject">
+                        <OBJECT Class = "AsStateCalc" Name = "Argument_of_Latitude_Difference">
+                            <OBJECT Class = "link" Name = "CalcObject">
+                                <OBJECT Class = "string" Name = ""> &quot;Argument_of_Latitude&quot; </OBJECT>
+                            </OBJECT>
+                            <OBJECT Class = "string" Name = "Category"> &quot;Math&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Difference of a specified function&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "DifferenceOrderToUse"> &quot;Current Minus Initial&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;CAgAsStateCalcDifference&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Difference of a specified function&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Comment"> &quot;User-supplied comment&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Condition"> &quot;Cross Either (Inc.or Dec.)&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Stop on a specified value using a specifed calculation object&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Dimension"> &quot;AngleUnit&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Inherited"> True </OBJECT>
+                    <OBJECT Class = "int" Name = "MaxTripTimes"> 10000 </OBJECT>
+                    <OBJECT Class = "int" Name = "RepeatCount"> 1 </OBJECT>
+                    <OBJECT Class = "link" Name = "Sequence">
+                        <OBJECT Class = "string" Name = ""> &quot;STOP&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Tolerance"> 1.74532925199433e-005 rad </OBJECT>
+                    <OBJECT Class = "double" Name = "TripValue"> 0 rad </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;UserSelect&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Stop on a specified value using a specifed calculation object&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;Propagate&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+            <OBJECT Class = "bool" Name = "UseMaxPropTimeWarn"> True </OBJECT>
+            <OBJECT Class = "bool" Name = "UseMaxPropTime"> True </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;Propagates until stopping conditions are met&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+        </OBJECT>
+        <OBJECT Class = "MCSSegment" Name = "-">
+            <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;End Of Sequence&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;End&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;End Of Sequence&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+        </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "string" Name = "StateToPass"> &quot;Final&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Type"> &quot;Sequence&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+    <OBJECT Class = "string" Name = "UserComment"> &quot;Transfer to a circular orbit with a specified radius&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+</OBJECT>
+</STKOBJECT>

@@ -1,0 +1,18 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "AsStateCalc" Name = "Thrust_Vector_X">
+     <OBJECT Class = "string" Name = "AxCM_Interface"> "AsStateCalc" </OBJECT>
+     <OBJECT Class = "link" Name = "CoordAxes">
+          <OBJECT Class = "string" Name = ""> "CentralBody/Earth J2000" </OBJECT>
+     </OBJECT>
+     <OBJECT Class = "string" Name = "Description"> "X component of specified vector" </OBJECT>
+     <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+     <OBJECT Class = "string" Name = "Type"> "CAgAsStateCalcVectorX" </OBJECT>
+     <OBJECT Class = "string" Name = "UnitDimension"> "ForceUnit" </OBJECT>
+     <OBJECT Class = "string" Name = "UserComment"> "X component Total Thrust Vector in inertial axes" </OBJECT>
+     <OBJECT Class = "link" Name = "Vector">
+          <OBJECT Class = "string" Name = ""> "Satellite TotalThrust" </OBJECT>
+     </OBJECT>
+     <OBJECT Class = "string" Name = "Version"> "1.0.0 a" </OBJECT>
+</OBJECT>
+</STKOBJECT>

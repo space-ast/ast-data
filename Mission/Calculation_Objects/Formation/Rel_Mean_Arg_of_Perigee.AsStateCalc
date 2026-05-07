@@ -1,0 +1,14 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "AsStateCalc" Name = "Rel_Mean_Arg_of_Perigee">
+     <OBJECT Class = "string" Name = "AxCM_Interface"> "AsStateCalc" </OBJECT>
+     <OBJECT Class = "link" Name = "CalcObject">
+          <OBJECT Class = "string" Name = ""> "Mean_Argument_of_Perigee" </OBJECT>
+     </OBJECT>
+     <OBJECT Class = "string" Name = "Description"> "Relative value of a specified function compared to the master satellite" </OBJECT>
+     <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+     <OBJECT Class = "string" Name = "Type"> "CAgAsStateCalcDeltaFromMaster" </OBJECT>
+     <OBJECT Class = "string" Name = "UserComment"> "Relative mean argument of perigee compared to the master satellite" </OBJECT>
+     <OBJECT Class = "string" Name = "Version"> "1.0.0 a" </OBJECT>
+</OBJECT>
+</STKOBJECT>

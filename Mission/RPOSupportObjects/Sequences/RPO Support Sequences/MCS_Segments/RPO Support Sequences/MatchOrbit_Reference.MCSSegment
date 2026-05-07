@@ -1,0 +1,901 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "MCSSegment" Name = "MatchOrbit_Reference">
+    <OBJECT Class = "bool" Name = "BeenRun"> True </OBJECT>
+    <OBJECT Class = "container" Name = "BPlanes" />
+    <OBJECT Class = "string" Name = "Category"> &quot;RPO&quot; </OBJECT>
+    <OBJECT Class = "container" Name = "ChildrenSelected" />
+    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+    <OBJECT Class = "string" Name = "Description"> &quot;Sequence of segments&quot; </OBJECT>
+    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "AttrCon" Name = "FinalState">
+        <OBJECT Class = "Orbit_State" Name = "Orbit_State">
+            <OBJECT Class = "container" Name = "Cartesian">
+                <OBJECT Class = "double" Name = "X"> 1437834.163448113 m </OBJECT>
+                <OBJECT Class = "double" Name = "Y"> -42140811.35235455 m </OBJECT>
+                <OBJECT Class = "double" Name = "Z"> 2583.579462076558 m </OBJECT>
+                <OBJECT Class = "double" Name = "Vx"> 3072.852098974447 m*sec^-1 </OBJECT>
+                <OBJECT Class = "double" Name = "Vy"> 104.804943955695 m*sec^-1 </OBJECT>
+                <OBJECT Class = "double" Name = "Vz"> 1.970492093043553 m*sec^-1 </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "Cd"> 2.2 &quot;&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "CoordSysRep">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "Cr"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "DragArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "DryMass"> 500 kg </OBJECT>
+            <OBJECT Class = "date" Name = "Epoch"> &quot;3 Jan 2020 00:00:37.000000000&quot; TAIG </OBJECT>
+            <OBJECT Class = "double" Name = "FuelDensity"> 1000 kg*m^-3 </OBJECT>
+            <OBJECT Class = "double" Name = "FuelMass"> 500 kg </OBJECT>
+            <OBJECT Class = "double" Name = "K1"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "K2"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "RadPressureArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "RadPressureCoeff"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "SRPArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "TankPressure"> 5000 Pa </OBJECT>
+            <OBJECT Class = "double" Name = "TankTemperature"> 293.15 K </OBJECT>
+            <OBJECT Class = "container" Name = "UserVariables" />
+        </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "bool" Name = "GenerateEphemeris"> True </OBJECT>
+    <OBJECT Class = "AttrCon" Name = "InitialState">
+        <OBJECT Class = "Orbit_State" Name = "Orbit_State">
+            <OBJECT Class = "container" Name = "Cartesian">
+                <OBJECT Class = "double" Name = "X"> -7.745768539927089e-09 m </OBJECT>
+                <OBJECT Class = "double" Name = "Y"> -42165999.99999998 m </OBJECT>
+                <OBJECT Class = "double" Name = "Z"> 0 m </OBJECT>
+                <OBJECT Class = "double" Name = "Vx"> 3074.59261470643 m*sec^-1 </OBJECT>
+                <OBJECT Class = "double" Name = "Vy"> -5.64793500642348e-13 m*sec^-1 </OBJECT>
+                <OBJECT Class = "double" Name = "Vz"> 2.146470920086454 m*sec^-1 </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "Cd"> 2.2 &quot;&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "CoordSysRep">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "Cr"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "DragArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "DryMass"> 500 kg </OBJECT>
+            <OBJECT Class = "date" Name = "Epoch"> &quot;1 Jan 2020 00:00:37.000000000&quot; TAIG </OBJECT>
+            <OBJECT Class = "double" Name = "FuelDensity"> 1000 kg*m^-3 </OBJECT>
+            <OBJECT Class = "double" Name = "FuelMass"> 500 kg </OBJECT>
+            <OBJECT Class = "double" Name = "K1"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "K2"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "RadPressureArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "RadPressureCoeff"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "SRPArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "TankPressure"> 5000 Pa </OBJECT>
+            <OBJECT Class = "double" Name = "TankTemperature"> 293.15 K </OBJECT>
+            <OBJECT Class = "container" Name = "UserVariables" />
+        </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "string" Name = "InputDirection"> &quot;Forward&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "LastRunCode"> &quot;Marching&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+    <OBJECT Class = "int" Name = "RepeatCount"> 1 </OBJECT>
+    <OBJECT Class = "container" Name = "ResultsSelected" />
+    <OBJECT Class = "ListLink" Name = "Results" />
+    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+    <OBJECT Class = "link" Name = "ScriptingTool">
+        <OBJECT Class = "TargeterProfile" Name = "Scripting_Tool">
+            <OBJECT Class = "ListLink" Name = "Attributes">
+                <OBJECT Class = "ScriptingToolAttr" Name = "InitialState_Epoch">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;InitialState.Epoch&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunFinalValue"> &quot;1 Jan 2020 00:00:00.000 UTCG&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunInitialValue"> &quot;2 Jan 2020 00:00:00.000 UTCG&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Initial_State&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;UTCG&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "InitialState_SMA">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;InitialState.Keplerian.sma&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunFinalValue"> &quot;42166000 m&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunInitialValue"> &quot;26560921.7660782 m&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Initial_State&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;km&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "InitialState_Ecc">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;InitialState.Keplerian.ecc&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunFinalValue"> &quot;0&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunInitialValue"> &quot;1.00230229426678e-05&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Initial_State&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "InitialState_Inc">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;InitialState.Keplerian.inc&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunFinalValue"> &quot;0.04 deg&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunInitialValue"> &quot;0.124147238028326 deg&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Initial_State&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;deg&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "InitialState_RAAN">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;InitialState.Keplerian.RAAN&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunFinalValue"> &quot;270 deg&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunInitialValue"> &quot;71.7584646738776 deg&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Initial_State&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;deg&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "InitialState_AoP">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;InitialState.Keplerian.w&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunFinalValue"> &quot;0 deg&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunInitialValue"> &quot;312.915529492062 deg&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Initial_State&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;deg&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "InitialState_TA">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;InitialState.Keplerian.TA&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunFinalValue"> &quot;0 deg&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunInitialValue"> &quot;346.173736543085 deg&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Initial_State&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;deg&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolAttr" Name = "Ephem_Duration">
+                    <OBJECT Class = "string" Name = "Attribute"> &quot;StoppingConditions.Duration.TripValue&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunFinalValue"> &quot;48 hr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunInitialValue"> &quot;720 hr&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "Object">
+                        <OBJECT Class = "string" Name = ""> &quot;Segments.Propagate&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnlyProperty"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolAttr&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;sec&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;User defined attribute&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "bool" Name = "BeenRun"> True </OBJECT>
+            <OBJECT Class = "ListLink" Name = "CalcObjects" />
+            <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;-Scripting Tool-&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Language"> &quot;VBScript&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Mode"> &quot;Active&quot; </OBJECT>
+            <OBJECT Class = "ListLink" Name = "Parameters">
+                <OBJECT Class = "ScriptingToolParameter" Name = "MatchOrbit_Epoch">
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Script Parameter&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "EnumChoices">
+                        <OBJECT Class = "ScriptingToolParameterEnumChoice" Name = "Default_value">
+                            <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "int" Name = "EnumValue"> 0 </OBJECT>
+                            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                            <OBJECT Class = "container" Name = "ShooterControls" />
+                            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolParameterEnumChoice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "InheritValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunValue"> &quot;1 Jan 2020 00:00:00.000 UTCG&quot; </OBJECT>
+                    <OBJECT Class = "date" Name = "MaxValue"> &quot;15 Nov 5188 09:47:16.000000000&quot; TAIG </OBJECT>
+                    <OBJECT Class = "date" Name = "MinValue"> &quot;15 Feb -1149 14:13:58.000000000&quot; TAIG </OBJECT>
+                    <OBJECT Class = "string" Name = "ParamType"> &quot;Date&quot; </OBJECT>
+                    <OBJECT Class = "date" Name = "ParamValue"> &quot;1 Jan 2020 00:00:37.000000000&quot; TAIG </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgScriptingToolParameter&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UnitDimension"> &quot;DateFormat&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;UTCG&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxValue"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMinValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Epoch of the orbit to match as UTCG&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolParameter" Name = "MatchOrbit_SMA">
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Script Parameter&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "EnumChoices">
+                        <OBJECT Class = "ScriptingToolParameterEnumChoice" Name = "Default_value">
+                            <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "int" Name = "EnumValue"> 0 </OBJECT>
+                            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                            <OBJECT Class = "container" Name = "ShooterControls" />
+                            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolParameterEnumChoice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "InheritValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunValue"> &quot;42166000 m&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "MaxValue"> 1.797693134862316e+308 m </OBJECT>
+                    <OBJECT Class = "double" Name = "MinValue"> -1.797693134862316e+308 m </OBJECT>
+                    <OBJECT Class = "string" Name = "ParamType"> &quot;Quantity&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "ParamValue"> 42166000 m </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgScriptingToolParameter&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UnitDimension"> &quot;DistanceUnit&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;km&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxValue"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMinValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Semi-Major Axis of the orbit to match in kilometers&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolParameter" Name = "MatchOrbit_Ecc">
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Script Parameter&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "EnumChoices">
+                        <OBJECT Class = "ScriptingToolParameterEnumChoice" Name = "Default_value">
+                            <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "int" Name = "EnumValue"> 0 </OBJECT>
+                            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                            <OBJECT Class = "container" Name = "ShooterControls" />
+                            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolParameterEnumChoice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "InheritValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunValue"> &quot;0&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "MaxValue"> 1.797693134862316e+308 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "MinValue"> -1.797693134862316e+308 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "ParamType"> &quot;Double&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "ParamValue"> 0 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgScriptingToolParameter&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UnitDimension"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxValue"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMinValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Eccentricity of the orbit to match as double&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolParameter" Name = "MatchOrbit_Inc">
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Script Parameter&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "EnumChoices">
+                        <OBJECT Class = "ScriptingToolParameterEnumChoice" Name = "Default_value">
+                            <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "int" Name = "EnumValue"> 0 </OBJECT>
+                            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                            <OBJECT Class = "container" Name = "ShooterControls" />
+                            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolParameterEnumChoice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "InheritValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunValue"> &quot;0.040000000000000001 deg&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "MaxValue"> 1.797693134862316e+308 rad </OBJECT>
+                    <OBJECT Class = "double" Name = "MinValue"> -1.797693134862316e+308 rad </OBJECT>
+                    <OBJECT Class = "string" Name = "ParamType"> &quot;Quantity&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "ParamValue"> 0.08726646259971647 rad </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgScriptingToolParameter&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UnitDimension"> &quot;AngleUnit&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;deg&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxValue"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMinValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Inclination of the orbit to match as angle in degrees&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolParameter" Name = "MatchOrbit_RAAN">
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Script Parameter&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "EnumChoices">
+                        <OBJECT Class = "ScriptingToolParameterEnumChoice" Name = "Default_value">
+                            <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "int" Name = "EnumValue"> 0 </OBJECT>
+                            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                            <OBJECT Class = "container" Name = "ShooterControls" />
+                            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolParameterEnumChoice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "InheritValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunValue"> &quot;270 deg&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "MaxValue"> 1.797693134862316e+308 rad </OBJECT>
+                    <OBJECT Class = "double" Name = "MinValue"> -1.797693134862316e+308 rad </OBJECT>
+                    <OBJECT Class = "string" Name = "ParamType"> &quot;Quantity&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "ParamValue"> 4.71238898038469 rad </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgScriptingToolParameter&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UnitDimension"> &quot;AngleUnit&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;deg&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxValue"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMinValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;RAAN of the orbit to match as angle in degrees&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolParameter" Name = "MatchOrbit_AoP">
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Script Parameter&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "EnumChoices">
+                        <OBJECT Class = "ScriptingToolParameterEnumChoice" Name = "Default_value">
+                            <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "int" Name = "EnumValue"> 0 </OBJECT>
+                            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                            <OBJECT Class = "container" Name = "ShooterControls" />
+                            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolParameterEnumChoice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "InheritValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunValue"> &quot;0 deg&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "MaxValue"> 1.797693134862316e+308 rad </OBJECT>
+                    <OBJECT Class = "double" Name = "MinValue"> -1.797693134862316e+308 rad </OBJECT>
+                    <OBJECT Class = "string" Name = "ParamType"> &quot;Quantity&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "ParamValue"> 0 rad </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgScriptingToolParameter&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UnitDimension"> &quot;AngleUnit&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;deg&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxValue"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMinValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Argument of Perigee of the orbit to match as angle in degrees&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolParameter" Name = "MatchOrbit_TA">
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Script Parameter&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "EnumChoices">
+                        <OBJECT Class = "ScriptingToolParameterEnumChoice" Name = "Default_value">
+                            <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "int" Name = "EnumValue"> 0 </OBJECT>
+                            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                            <OBJECT Class = "container" Name = "ShooterControls" />
+                            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolParameterEnumChoice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "InheritValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunValue"> &quot;0 deg&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "MaxValue"> 1.797693134862316e+308 rad </OBJECT>
+                    <OBJECT Class = "double" Name = "MinValue"> -1.797693134862316e+308 rad </OBJECT>
+                    <OBJECT Class = "string" Name = "ParamType"> &quot;Quantity&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "ParamValue"> 0 rad </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgScriptingToolParameter&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UnitDimension"> &quot;AngleUnit&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;deg&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxValue"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMinValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;True Anomaly of the orbit to match as angle in degrees&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+                <OBJECT Class = "ScriptingToolParameter" Name = "MatchOrbit_Duration">
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Script Parameter&quot; </OBJECT>
+                    <OBJECT Class = "ListLink" Name = "EnumChoices">
+                        <OBJECT Class = "ScriptingToolParameterEnumChoice" Name = "Default_value">
+                            <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                            <OBJECT Class = "string" Name = "Description"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "int" Name = "EnumValue"> 0 </OBJECT>
+                            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                            <OBJECT Class = "container" Name = "ShooterControls" />
+                            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingToolParameterEnumChoice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "UserComment"> &quot;Parameter enum choice&quot; </OBJECT>
+                            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                        </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "bool" Name = "InheritValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "LastRunValue"> &quot;48 hr&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "MaxValue"> 1.797693134862316e+308 sec </OBJECT>
+                    <OBJECT Class = "double" Name = "MinValue"> -1.797693134862316e+308 sec </OBJECT>
+                    <OBJECT Class = "string" Name = "ParamType"> &quot;Quantity&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "ParamValue"> 172800 sec </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;AgScriptingToolParameter&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UnitDimension"> &quot;TimeUnit&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Unit"> &quot;sec&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMaxValue"> False </OBJECT>
+                    <OBJECT Class = "bool" Name = "UseMinValue"> False </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Duration of the match orbit ephemeris generation in seconds&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "bool" Name = "PreIterate"> False </OBJECT>
+            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+            <OBJECT Class = "string" Name = "ScriptStatements"> &quot;InitialState_Epoch = MatchOrbit_Epoch
+InitialState_SMA = MatchOrbit_SMA
+InitialState_Ecc = MatchOrbit_Ecc
+InitialState_Inc = MatchOrbit_Inc
+InitialState_RAAN = MatchOrbit_RAAN
+InitialState_AoP = MatchOrbit_AoP
+InitialState_TA = MatchOrbit_TA
+Ephem_Duration = MatchOrbit_Duration
+&quot; </OBJECT>
+            <OBJECT Class = "container" Name = "ShooterControls" />
+            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;ScriptingTool&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;-Scripting Tool-&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+        </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "int" Name = "SegmentColor"> 65280 </OBJECT>
+    <OBJECT Class = "container" Name = "SegmentListSelected" />
+    <OBJECT Class = "ListLink" Name = "SegmentList">
+        <OBJECT Class = "MCSSegment" Name = "Initial_State">
+            <OBJECT Class = "string" Name = "AnomType"> &quot;True Anomaly&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "BeenRun"> True </OBJECT>
+            <OBJECT Class = "container" Name = "BPlanes" />
+            <OBJECT Class = "string" Name = "Category"> &quot;@Top&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+            <OBJECT Class = "link" Name = "CoordinateSystem">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "CoordinateType"> &quot;Keplerian&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;Initializes state data&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "EquinoctialFormulation"> &quot;Posigrade&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "EquinoctialSizeType"> &quot;Semi-major Axis&quot; </OBJECT>
+            <OBJECT Class = "AttrCon" Name = "FinalState">
+                <OBJECT Class = "Orbit_State" Name = "Orbit_State">
+                    <OBJECT Class = "container" Name = "Cartesian">
+                        <OBJECT Class = "double" Name = "X"> -7.745768539927089e-09 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Y"> -42165999.99999998 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Z"> 0 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Vx"> 3074.59261470643 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vy"> -5.64793500642348e-13 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vz"> 2.146470920086454 m*sec^-1 </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cd"> 2.2 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "CoordSysRep">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cr"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "DragArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "DryMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "date" Name = "Epoch"> &quot;1 Jan 2020 00:00:37.000000000&quot; TAIG </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelDensity"> 1000 kg*m^-3 </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "double" Name = "K1"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "K2"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureCoeff"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "SRPArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "TankPressure"> 5000 Pa </OBJECT>
+                    <OBJECT Class = "double" Name = "TankTemperature"> 293.15 K </OBJECT>
+                    <OBJECT Class = "container" Name = "UserVariables" />
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "FlightPathAngleType"> &quot;Horizontal Flight Path Angle&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "GeodeticAltRadRateType"> &quot;Altitude rate&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "GeodeticAltRadType"> &quot;Altitude&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "GType"> &quot;G&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "HType"> &quot;H&quot; </OBJECT>
+            <OBJECT Class = "AttrCon" Name = "InitialState">
+                <OBJECT Class = "Orbit_State" Name = "Orbit_State">
+                    <OBJECT Class = "container" Name = "Cartesian">
+                        <OBJECT Class = "double" Name = "X"> 26085993.98371018 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Y"> 4998721.974834006 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Z"> -50291.72308944665 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Vx"> -729.0764247474523 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vy"> 3804.700902122207 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vz"> 4.080911315578142 m*sec^-1 </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cd"> 2.2 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "CoordSysRep">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cr"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "DragArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "DryMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "date" Name = "Epoch"> &quot;2 Jan 2020 00:00:37.000000000&quot; TAIG </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelDensity"> 1000 kg*m^-3 </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "double" Name = "K1"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "K2"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureCoeff"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "SRPArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "TankPressure"> 5000 Pa </OBJECT>
+                    <OBJECT Class = "double" Name = "TankTemperature"> 293.15 K </OBJECT>
+                    <OBJECT Class = "container" Name = "UserVariables" />
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "KeplerianElementType"> &quot;Osculating&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "LastRunCode"> &quot;Marching&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "LType"> &quot;L&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "MixedFlightPathAngleType"> &quot;Horizontal Flight Path Angle&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "NodeType"> &quot;Right Asc. of Asc. Node&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+            <OBJECT Class = "container" Name = "ResultsSelected" />
+            <OBJECT Class = "ListLink" Name = "Results" />
+            <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+            <OBJECT Class = "int" Name = "SegmentColor"> 65280 </OBJECT>
+            <OBJECT Class = "string" Name = "ShapeType"> &quot;Eccentricity&quot; </OBJECT>
+            <OBJECT Class = "container" Name = "ShooterControls" />
+            <OBJECT Class = "string" Name = "SizeType"> &quot;Semi-major Axis&quot; </OBJECT>
+            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+            <OBJECT Class = "bool" Name = "TreeNodeExpanded"> False </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;InitialState&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;Initializes state data&quot; </OBJECT>
+            <OBJECT Class = "container" Name = "UserVariables" />
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+        </OBJECT>
+        <OBJECT Class = "MCSSegment" Name = "Propagate">
+            <OBJECT Class = "double" Name = "AverageStep"> 1069.484198757764 sec </OBJECT>
+            <OBJECT Class = "bool" Name = "BeenRun"> True </OBJECT>
+            <OBJECT Class = "container" Name = "BPlanes" />
+            <OBJECT Class = "string" Name = "Category"> &quot;@Top&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;Propagates until stopping conditions are met&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "FinalDeltaV"> 0 m*sec^-1 </OBJECT>
+            <OBJECT Class = "double" Name = "FinalInertialDeltaVx"> 0 m*sec^-1 </OBJECT>
+            <OBJECT Class = "double" Name = "FinalInertialDeltaVy"> 0 m*sec^-1 </OBJECT>
+            <OBJECT Class = "double" Name = "FinalInertialDeltaVz"> 0 m*sec^-1 </OBJECT>
+            <OBJECT Class = "AttrCon" Name = "FinalState">
+                <OBJECT Class = "Orbit_State" Name = "Orbit_State">
+                    <OBJECT Class = "container" Name = "Cartesian">
+                        <OBJECT Class = "double" Name = "X"> 1437834.163448113 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Y"> -42140811.35235455 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Z"> 2583.579462076558 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Vx"> 3072.852098974447 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vy"> 104.804943955695 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vz"> 1.970492093043553 m*sec^-1 </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cd"> 2.2 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "CoordSysRep">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cr"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "DragArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "DryMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "date" Name = "Epoch"> &quot;3 Jan 2020 00:00:37.000000000&quot; TAIG </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelDensity"> 1000 kg*m^-3 </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "double" Name = "K1"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "K2"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureCoeff"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "SRPArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "TankPressure"> 5000 Pa </OBJECT>
+                    <OBJECT Class = "double" Name = "TankTemperature"> 293.15 K </OBJECT>
+                    <OBJECT Class = "container" Name = "UserVariables" />
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "AttrCon" Name = "InitialState">
+                <OBJECT Class = "Orbit_State" Name = "Orbit_State">
+                    <OBJECT Class = "container" Name = "Cartesian">
+                        <OBJECT Class = "double" Name = "X"> -7.745768539927089e-09 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Y"> -42165999.99999998 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Z"> 0 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Vx"> 3074.59261470643 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vy"> -5.64793500642348e-13 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vz"> 2.146470920086454 m*sec^-1 </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cd"> 2.2 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "CoordSysRep">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cr"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "DragArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "DryMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "date" Name = "Epoch"> &quot;1 Jan 2020 00:00:37.000000000&quot; TAIG </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelDensity"> 1000 kg*m^-3 </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "double" Name = "K1"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "K2"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureCoeff"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "SRPArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "TankPressure"> 5000 Pa </OBJECT>
+                    <OBJECT Class = "double" Name = "TankTemperature"> 293.15 K </OBJECT>
+                    <OBJECT Class = "container" Name = "UserVariables" />
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "LargestStep"> 1093.48 sec </OBJECT>
+            <OBJECT Class = "string" Name = "LastRunCode"> &quot;Marching&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "LastRunPropagator">
+                <OBJECT Class = "string" Name = ""> &quot;Earth_HPOP_Default_v10&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "MaxPropTime"> 8640000 sec </OBJECT>
+            <OBJECT Class = "double" Name = "MinPropTime"> 0 sec </OBJECT>
+            <OBJECT Class = "int" Name = "NumSteps"> 161 </OBJECT>
+            <OBJECT Class = "bool" Name = "OverrideMaxPropTime"> True </OBJECT>
+            <OBJECT Class = "link" Name = "Propagator">
+                <OBJECT Class = "string" Name = ""> &quot;Earth_HPOP_Default_v10&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+            <OBJECT Class = "container" Name = "ResultsSelected" />
+            <OBJECT Class = "ListLink" Name = "Results" />
+            <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+            <OBJECT Class = "int" Name = "SegmentColor"> 65280 </OBJECT>
+            <OBJECT Class = "container" Name = "ShooterControls" />
+            <OBJECT Class = "double" Name = "SmallestStep"> 60 sec </OBJECT>
+            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+            <OBJECT Class = "bool" Name = "StopForInitiallySurpassedEpochs"> False </OBJECT>
+            <OBJECT Class = "container" Name = "StoppingConditionsSelected" />
+            <OBJECT Class = "ListLink" Name = "StoppingConditions">
+                <OBJECT Class = "AsStateTrigger" Name = "Duration">
+                    <OBJECT Class = "bool" Name = "Active"> True </OBJECT>
+                    <OBJECT Class = "container" Name = "BeforeConditionsSelected" />
+                    <OBJECT Class = "ListLink" Name = "BeforeConditions" />
+                    <OBJECT Class = "AttrCon" Name = "CalcObjectAttributes">
+                        <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                        <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                        <OBJECT Class = "string" Name = "Description"> &quot;Duration from an epoch&quot; </OBJECT>
+                        <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                        <OBJECT Class = "container" Name = "ShooterControls" />
+                        <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                        <OBJECT Class = "string" Name = "Type"> &quot;AsStateCalcDuration&quot; </OBJECT>
+                        <OBJECT Class = "string" Name = "UserComment"> &quot;Duration from an epoch&quot; </OBJECT>
+                        <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "string" Name = "Category"> &quot;@Top&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Comment"> &quot;User-supplied comment&quot; </OBJECT>
+                    <OBJECT Class = "container" Name = "ConstraintsSelected" />
+                    <OBJECT Class = "ListLink" Name = "Constraints" />
+                    <OBJECT Class = "string" Name = "Description"> &quot;Stop after a specified duration&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Dimension"> &quot;TimeUnit&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "Inherited"> True </OBJECT>
+                    <OBJECT Class = "int" Name = "MaxTripTimes"> 10000 </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "link" Name = "Sequence">
+                        <OBJECT Class = "string" Name = ""> &quot;STOP&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "double" Name = "Tolerance"> 1e-08 sec </OBJECT>
+                    <OBJECT Class = "double" Name = "TripValue"> 2592000 sec </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;Duration&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Stop after a specified duration&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "bool" Name = "TreeNodeExpanded"> False </OBJECT>
+            <OBJECT Class = "ListLink" Name = "TriggerLog">
+                <OBJECT Class = "TriggerLog" Name = "Trigger_Log">
+                    <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+                    <OBJECT Class = "bool" Name = "CausedTermination"> True </OBJECT>
+                    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+                    <OBJECT Class = "string" Name = "Description"> &quot;Trigger Log Information&quot; </OBJECT>
+                    <OBJECT Class = "date" Name = "Epoch"> &quot;3 Jan 2020 00:00:37.000000000&quot; TAIG </OBJECT>
+                    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+                    <OBJECT Class = "container" Name = "ShooterControls" />
+                    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+                    <OBJECT Class = "string" Name = "TriggerDescription"> &quot;Duration; Run Sequence STOP&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Type"> &quot;TriggerLogEntry&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "UserComment"> &quot;Trigger Log Information&quot; </OBJECT>
+                    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;Propagate&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+            <OBJECT Class = "bool" Name = "UsedRegTime"> False </OBJECT>
+            <OBJECT Class = "bool" Name = "UseMaxPropTimeWarn"> True </OBJECT>
+            <OBJECT Class = "bool" Name = "UseMaxPropTime"> True </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;Propagates until stopping conditions are met&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+        </OBJECT>
+        <OBJECT Class = "MCSSegment" Name = "-">
+            <OBJECT Class = "bool" Name = "BeenRun"> True </OBJECT>
+            <OBJECT Class = "container" Name = "BPlanes" />
+            <OBJECT Class = "string" Name = "Category"> &quot;&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+            <OBJECT Class = "string" Name = "Description"> &quot;End Of Sequence&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "DisplayCoordSystem">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "AttrCon" Name = "FinalState">
+                <OBJECT Class = "Orbit_State" Name = "Orbit_State">
+                    <OBJECT Class = "container" Name = "Cartesian">
+                        <OBJECT Class = "double" Name = "X"> 1437834.163448113 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Y"> -42140811.35235455 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Z"> 2583.579462076558 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Vx"> 3072.852098974447 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vy"> 104.804943955695 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vz"> 1.970492093043553 m*sec^-1 </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cd"> 2.2 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "CoordSysRep">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cr"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "DragArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "DryMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "date" Name = "Epoch"> &quot;3 Jan 2020 00:00:37.000000000&quot; TAIG </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelDensity"> 1000 kg*m^-3 </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "double" Name = "K1"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "K2"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureCoeff"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "SRPArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "TankPressure"> 5000 Pa </OBJECT>
+                    <OBJECT Class = "double" Name = "TankTemperature"> 293.15 K </OBJECT>
+                    <OBJECT Class = "container" Name = "UserVariables" />
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "AttrCon" Name = "InitialState">
+                <OBJECT Class = "Orbit_State" Name = "Orbit_State">
+                    <OBJECT Class = "container" Name = "Cartesian">
+                        <OBJECT Class = "double" Name = "X"> 1437834.163448113 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Y"> -42140811.35235455 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Z"> 2583.579462076558 m </OBJECT>
+                        <OBJECT Class = "double" Name = "Vx"> 3072.852098974447 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vy"> 104.804943955695 m*sec^-1 </OBJECT>
+                        <OBJECT Class = "double" Name = "Vz"> 1.970492093043553 m*sec^-1 </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cd"> 2.2 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "link" Name = "CoordSysRep">
+                        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+                    </OBJECT>
+                    <OBJECT Class = "double" Name = "Cr"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "DragArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "DryMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "date" Name = "Epoch"> &quot;3 Jan 2020 00:00:37.000000000&quot; TAIG </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelDensity"> 1000 kg*m^-3 </OBJECT>
+                    <OBJECT Class = "double" Name = "FuelMass"> 500 kg </OBJECT>
+                    <OBJECT Class = "double" Name = "K1"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "K2"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "RadPressureCoeff"> 1 &quot;&quot; </OBJECT>
+                    <OBJECT Class = "double" Name = "SRPArea"> 20 m^2 </OBJECT>
+                    <OBJECT Class = "double" Name = "TankPressure"> 5000 Pa </OBJECT>
+                    <OBJECT Class = "double" Name = "TankTemperature"> 293.15 K </OBJECT>
+                    <OBJECT Class = "container" Name = "UserVariables" />
+                </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "string" Name = "LastRunCode"> &quot;Marching&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+            <OBJECT Class = "container" Name = "ResultsSelected" />
+            <OBJECT Class = "ListLink" Name = "Results" />
+            <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+            <OBJECT Class = "int" Name = "SegmentColor"> 65280 </OBJECT>
+            <OBJECT Class = "container" Name = "ShooterControls" />
+            <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+            <OBJECT Class = "bool" Name = "TreeNodeExpanded"> False </OBJECT>
+            <OBJECT Class = "string" Name = "Type"> &quot;End&quot; </OBJECT>
+            <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+            <OBJECT Class = "string" Name = "UserComment"> &quot;End Of Sequence&quot; </OBJECT>
+            <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+        </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "container" Name = "ShooterControls" />
+    <OBJECT Class = "string" Name = "StateToPass"> &quot;Final&quot; </OBJECT>
+    <OBJECT Class = "int" Name = "STKVersion"> 1200 </OBJECT>
+    <OBJECT Class = "bool" Name = "TreeNodeExpanded"> True </OBJECT>
+    <OBJECT Class = "string" Name = "Type"> &quot;Sequence&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+    <OBJECT Class = "string" Name = "UserComment"> &quot;Sequence of segments&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+</OBJECT>
+</STKOBJECT>

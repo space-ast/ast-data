@@ -1,0 +1,15 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "AsStateCalc" Name = "Mean_Mean_Anomaly">
+     <OBJECT Class = "string" Name = "AxCM_Interface"> "AsStateCalc" </OBJECT>
+     <OBJECT Class = "link" Name = "CentralBody">
+          <OBJECT Class = "string" Name = ""> "Earth" </OBJECT>
+     </OBJECT>
+     <OBJECT Class = "string" Name = "Description"> "Mean anomaly of the orbiting object" </OBJECT>
+     <OBJECT Class = "string" Name = "ElementType"> "Kozai-Izsak Mean" </OBJECT>
+     <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+     <OBJECT Class = "string" Name = "Type"> "AsStateCalcMeanAnomaly" </OBJECT>
+     <OBJECT Class = "string" Name = "UserComment"> "Kozai-Izsak mean mean anomaly of the orbiting object" </OBJECT>
+     <OBJECT Class = "string" Name = "Version"> "1.0.0 a" </OBJECT>
+</OBJECT>
+</STKOBJECT>

@@ -1,0 +1,49 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "AsStateTrigger" Name = "Longitude">
+     <OBJECT Class = "string" Name = "AxCM_Interface"> "AsStateTrigger" </OBJECT>
+     <OBJECT Class = "AttrCon" Name = "CalcObjectAttributes">
+          <OBJECT Class = "string" Name = "AxCM_Interface"> "AsStateCalc" </OBJECT>
+          <OBJECT Class = "link" Name = "CentralBody">
+               <OBJECT Class = "string" Name = ""> "Earth" </OBJECT>
+          </OBJECT>
+          <OBJECT Class = "string" Name = "Description"> "Longitude with respect to central body" </OBJECT>
+          <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+          <OBJECT Class = "string" Name = "Type"> "AsStateCalcLongitude" </OBJECT>
+          <OBJECT Class = "string" Name = "UserComment"> "Longitude with respect to central body" </OBJECT>
+          <OBJECT Class = "string" Name = "Version"> "1.0.0 a" </OBJECT>
+     </OBJECT>
+     <OBJECT Class = "link" Name = "CalcObject">
+          <OBJECT Class = "AsStateCalc" Name = "Longitude">
+               <OBJECT Class = "string" Name = "AxCM_Interface"> "AsStateCalc" </OBJECT>
+               <OBJECT Class = "link" Name = "CentralBody">
+                    <OBJECT Class = "string" Name = ""> "Earth" </OBJECT>
+               </OBJECT>
+               <OBJECT Class = "string" Name = "Description"> "Longitude with respect to central body" </OBJECT>
+               <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+               <OBJECT Class = "string" Name = "Type"> "AsStateCalcLongitude" </OBJECT>
+               <OBJECT Class = "string" Name = "UserComment"> "Longitude with respect to central body" </OBJECT>
+               <OBJECT Class = "string" Name = "Version"> "1.0.0 a" </OBJECT>
+          </OBJECT>
+     </OBJECT>
+     <OBJECT Class = "string" Name = "Comment"> "User-supplied comment" </OBJECT>
+     <OBJECT Class = "string" Name = "Condition"> "Cross Either (Inc.or Dec.)" </OBJECT>
+     <OBJECT Class = "AttrCon" Name = "ConstraintsSelected">
+     </OBJECT>
+     <OBJECT Class = "ListLink" Name = "Constraints">
+     </OBJECT>
+     <OBJECT Class = "string" Name = "Description"> "Stop on a specified value using a specifed calculation object" </OBJECT>
+     <OBJECT Class = "bool" Name = "Inherited"> True </OBJECT>
+     <OBJECT Class = "int" Name = "MaxTripTimes"> 10000 </OBJECT>
+     <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+     <OBJECT Class = "int" Name = "RepeatCount"> 1 </OBJECT>
+     <OBJECT Class = "link" Name = "Sequence">
+          <OBJECT Class = "string" Name = ""> "STOP" </OBJECT>
+     </OBJECT>
+     <OBJECT Class = "double" Name = "Tolerance"> 1e-006 rad </OBJECT>
+     <OBJECT Class = "double" Name = "TripValue"> 0 rad </OBJECT>
+     <OBJECT Class = "string" Name = "Type"> "UserSelect" </OBJECT>
+     <OBJECT Class = "string" Name = "UserComment"> "Stop on a specified longitude" </OBJECT>
+     <OBJECT Class = "string" Name = "Version"> "1.0.0 a" </OBJECT>
+</OBJECT>
+</STKOBJECT>
