@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer" transform="rotate(45, 16, 16)">
+    <title>Layer 1</title>
+    <!-- 外焰 -->
+    <path d="m12,24 C12,29 14,34 16,34 C18,34 20,29 20,24 Z" fill="#FF9933"/>
+    <!-- 内焰 -->
+    <path d="m13.5,24 C13.5,27 15,30 16,31 C17,30 18.5,27 18.5,24 Z" fill="#FFDD00"/>
+
+    <!-- 区域1 - 收敛段 (y=2 到 y=8) 最浅灰 -->
+    <path d="m12,2 L20,2 L18.5,8 L13.5,8 Z" fill="#B0B0B0" stroke="#333" stroke-width="0.5"/>
+    <!-- 区域2 - 上扩张段 (y=8 到 y=14) 浅灰 -->
+    <path d="m13.5,8 L18.5,8 L22,14 L10,14 Z" fill="#909090" stroke="#333" stroke-width="0.5"/>
+    <!-- 区域3 - 下扩张段 (y=14 到 y=20) 中灰 -->
+    <path d="m10,14 L22,14 L24,20 L8,20 Z" fill="#707070" stroke="#333" stroke-width="0.5"/>
+    <!-- 区域4 - 出口段 (y=20 到 y=24) 深灰 -->
+    <path d="m8,20 L24,20 L24.5,24 L7.5,24 Z" fill="#505050" stroke="#333" stroke-width="0.5"/>
+  </g>
+</svg>

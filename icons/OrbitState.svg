@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+
+    <!-- 椭圆轨道 -->
+    <ellipse cx="16" cy="16" rx="16" ry="10" fill="none" stroke="#3399FF" stroke-width="1.5"
+             transform="rotate(-30, 16, 16)"/>
+    <!-- 初始状态标记 - 远地点 -->
+    <circle cx="29" cy="7" r="2" fill="#FF9933"/>
+    <!-- 位置矢量 -->
+    <line x1="11" y1="18" x2="29" y2="7" stroke="#FF9933" stroke-width="1" stroke-dasharray="2,1.5"/>
+    <!-- 中心天体（焦点） -->
+    <circle cx="11" cy="18" r="3" fill="#3399FF"/>
+  </g>
+</svg>

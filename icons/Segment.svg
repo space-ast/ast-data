@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 轨道弧线段 -->
+    <path d="m9,16 C9,10 23,10 23,16"
+          fill="none" stroke="#5A8BAC" stroke-width="2" stroke-linecap="round"/>
+    <!-- 起始端点 -->
+    <circle cx="6" cy="16" r="3.5" fill="#FF9933"/>
+    <!-- 结束端点 -->
+    <circle cx="26" cy="16" r="3.5" fill="#FF9933"/>
+  </g>
+</svg>

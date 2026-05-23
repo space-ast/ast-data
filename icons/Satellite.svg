@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- 卫星主体 - 增大尺寸 -->
+  <circle cx="16" cy="16" r="5.5" fill="#3399FF"/>
+
+  <!-- 太阳能板 - 左侧 -->
+  <rect x="2" y="11" width="9" height="10" rx="1" fill="none" stroke="#3399FF" stroke-width="2"/>
+  <line x1="6.5" y1="11" x2="6.5" y2="21" stroke="#3399FF" stroke-width="1.5"/>
+
+  <!-- 太阳能板 - 右侧 -->
+  <rect x="21" y="11" width="9" height="10" rx="1" fill="none" stroke="#3399FF" stroke-width="2"/>
+  <line x1="25.5" y1="11" x2="25.5" y2="21" stroke="#3399FF" stroke-width="1.5"/>
+
+  <!-- 天线 -->
+  <line x1="16" y1="10.5" x2="16" y2="4" stroke="#3399FF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="16" y1="21.5" x2="16" y2="28" stroke="#3399FF" stroke-width="2" stroke-linecap="round"/>
+</svg>
