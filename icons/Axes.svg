@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 三轴 -->
+    <line x1="16" y1="16" x2="27" y2="16" stroke="#5A8BAC" stroke-width="1.5"/>
+    <line x1="16" y1="16" x2="16" y2="3" stroke="#5A8BAC" stroke-width="1.5"/>
+    <line x1="16" y1="16" x2="7" y2="25" stroke="#5A8BAC" stroke-width="1.5"/>
+    <!-- 箭头 -->
+    <polygon points="-3,-2 3,0 -3,2" fill="#5A8BAC" transform="translate(27,16) rotate(0)"/>
+    <polygon points="-3,-2 3,0 -3,2" fill="#5A8BAC" transform="translate(16,3) rotate(-90)"/>
+    <polygon points="-3,-2 3,0 -3,2" fill="#5A8BAC" transform="translate(7,25) rotate(135)"/>
+  </g>
+</svg>

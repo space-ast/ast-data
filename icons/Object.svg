@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 立方体：顶面 -->
+    <polygon points="16,5 25,11 16,17 7,11"
+             fill="#5A8BAC" fill-opacity="0.25" stroke="#5A8BAC" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- 左面 -->
+    <polygon points="7,11 16,17 16,27 7,21"
+             fill="none" stroke="#5A8BAC" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- 右面 -->
+    <polygon points="16,17 25,11 25,21 16,27"
+             fill="none" stroke="#5A8BAC" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+</svg>

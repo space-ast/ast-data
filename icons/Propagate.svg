@@ -1,12 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
- <g class="layer">
-  <title>Layer 1</title>
-  <path d="m18.97,13.41c3.76,-3.59 5.49,-6.01 4.18,-8.42c-1.31,-2.41 -6.99,-3.6 -14.1,3.63c-7.1,7.22 -6.25,13.99 -3.43,16.78c2.82,2.79 12.07,4.09 21.5,-9.02" fill="none" id="svg_1" marker-end="url(#mkr_end_svg_1)" stroke="#3399FF" stroke-linecap="round" stroke-width="2.5" transform="matrix(1 0 0 1 0 0)"/>
-  <circle cx="16" cy="16" fill="#3399FF" id="svg_2" r="2.5" transform="matrix(1 0 0 1 -2.71831 -1.18926)"/>
- </g>
- <defs>
-  <marker id="mkr_end_svg_1" markerHeight="5" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="50" refY="50" se_type="rightarrow" viewBox="0 0 100 100">
-   <path d="m100,50l-100,40l30,-40l-30,-40z" fill="#3399FF" stroke="#3399FF" stroke-width="10"/>
-  </marker>
- </defs>
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 螺旋轨道 -->
+    <path d="m18.97,13.41c3.76,-3.59 5.49,-6.01 4.18,-8.42c-1.31,-2.41 -6.99,-3.6 -14.1,3.63c-7.1,7.22 -6.25,13.99 -3.43,16.78c2.82,2.79 12.07,4.09 21.5,-9.02" fill="none" stroke="#3399FF" stroke-linecap="round" stroke-width="2.5"/>
+    <!-- 箭头 -->
+    <polygon points="5,0 -5,-3.5 -2,0 -5,3.5" fill="#3399FF" transform="translate(27,16) rotate(-54)"/>
+    <!-- 中心天体 -->
+    <circle cx="13.3" cy="14.8" r="2.5" fill="#3399FF"/>
+  </g>
 </svg>
