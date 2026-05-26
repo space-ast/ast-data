@@ -1,0 +1,27 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+
+  <g transform="rotate(45, 16, 16)">
+    <!-- 底座 -->
+    <path d="M 14,27 L 18,27 L 20,32 L 12,32 Z"
+          fill="#699AE2"/>
+
+    <!-- 抛物面反射器主体 -->
+    <path d="M 5,19 C 5,14 27,14 27,19 C 27,23 22,27 16,27 C 10,27 5,23 5,19 Z"
+          fill="#699AE2"/>
+
+    <!-- 碗口椭圆（反射器开口结构） -->
+    <ellipse cx="16" cy="18.5" rx="10.5" ry="3"
+             fill="none" stroke="#8AB8F0" stroke-width="1"/>
+
+    <!-- 馈源接收器 -->
+    <path d="M 14,9 L 18,9 L 18,13 L 14,13 Z"
+          fill="#699AE2"/>
+
+    <!-- 信号波束（两道弧线向上辐射） -->
+    <path d="M 12,5 Q 16,4 20,5"
+          fill="none" stroke="#699AE2" stroke-width="1" stroke-linecap="round"/>
+    <path d="M 10,2 Q 16,1 22,2"
+          fill="none" stroke="#699AE2" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+</svg>
