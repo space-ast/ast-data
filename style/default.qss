@@ -104,3 +104,117 @@ QStatusBar QLabel {
     background: #f5f5f5;
     margin: 1px 2px;
 }
+
+/* ---- 起始页 ---- */
+
+#StartPage {
+    background: #ffffff;
+}
+
+#StartPageSidebar {
+    background: #f4f4f4;
+    border-right: 1px solid #e1e1e1;
+    color: #1f1f1f;
+    font-size: 12px;
+}
+
+#StartPageLogo {
+    color: #2086d7;
+    font-family: "Segoe UI", "Microsoft YaHei UI";
+    font-size: 27px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+#StartPageSubtitle {
+    color: #6f6f6f;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#StartPageSectionTitle {
+    color: #171717;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+#StartPageActionButton {
+    border: none;
+    border-radius: 2px;
+    padding: 3px 4px;
+    min-height: 22px;
+    text-align: left;
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#StartPageActionButton:hover {
+    background: #e8edf4;
+}
+
+#StartPageLinkButton {
+    border: none;
+    border-radius: 2px;
+    padding: 2px 4px;
+    min-height: 20px;
+    text-align: left;
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#StartPageLinkButton:hover {
+    background: #e8edf4;
+}
+
+#StartPageStartupCheck {
+    color: #303030;
+    font-size: 12px;
+    font-weight: 400;
+    spacing: 6px;
+}
+
+#StartPageMainArea {
+    background: #ffffff;
+}
+
+#StartPageTabWidget::pane {
+    border: none;
+    border-top: 1px solid #e3e7ed;
+}
+
+#StartPageTabWidget QTabBar::tab {
+    background: #eef1f5;
+    border: 1px solid #d8dde5;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 7px 22px;
+    margin-right: 6px;
+}
+
+#StartPageTabWidget QTabBar::tab:selected {
+    background: #ffffff;
+    color: #1b73c9;
+    font-weight: 600;
+}
+
+#StartPageCard {
+    background: #fbfcfe;
+    border: 1px solid #e0e5ec;
+    border-radius: 3px;
+    padding: 10px;
+    color: #1f2d3d;
+}
+
+#StartPageCard:hover {
+    background: #f2f7ff;
+    border-color: #9ec7f2;
+}
+
+#StartPageCard:pressed {
+    background: #e7f1ff;
+}
