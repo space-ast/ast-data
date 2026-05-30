@@ -5,7 +5,7 @@
 QMainWindow {
     background-color: #f1f1f1;
     color: #202020;
-    font-family: "Microsoft YaHei UI", "Segoe UI";
+    font-family: "Microsoft YaHei UI", "Segoe UI", "Noto Sans SC";
     font-size: 12px;
 }
 
@@ -210,7 +210,7 @@ QStatusBar QLabel {
 
 #StartPageLogo {
     color: #2489d8;
-    font-family: "Segoe UI", "Microsoft YaHei UI";
+    font-family: "Segoe UI", "Microsoft YaHei UI", "Noto Sans SC";
     font-size: 25px;
     font-weight: 400;
     letter-spacing: 0.3px;
