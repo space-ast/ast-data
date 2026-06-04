@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 后层文档 -->
+    <rect x="4" y="4" width="16" height="18" rx="2" fill="#5C5C5C" stroke="#FFFFFF" stroke-width="1.5"/>
+    <!-- 前层文档 -->
+    <rect x="12" y="9" width="16" height="18" rx="2" fill="#5C5C5C" stroke="#FFFFFF" stroke-width="1.5"/>
+    <!-- 前层内容线 -->
+    <line x1="15.5" y1="14" x2="24.5" y2="14" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="15.5" y1="18" x2="24.5" y2="18" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="15.5" y1="22" x2="19.5" y2="22" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>
