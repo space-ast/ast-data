@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 后方曲线（蓝细） — 峰值最高 -->
+    <path d="m4,17 C11,13 17,7 24,9" fill="none" stroke="#3399FF" stroke-linecap="round" stroke-width="1.5"/>
+    <!-- 中间曲线（蓝） -->
+    <path d="m5,20 C12,16 18,10 25,12" fill="none" stroke="#3399FF" stroke-linecap="round" stroke-width="1.5"/>
+    <!-- 前方曲线（蓝粗） — 峰值最低，最平缓 -->
+    <path d="m6,24 C13,20 19,14 26,16" fill="none" stroke="#3399FF" stroke-linecap="round" stroke-width="2"/>
+    <!-- 曲面横连线（橙） — 连接对应参数点 -->
+    <path d="m6,24 L5,20 L4,17" fill="none" stroke="#FF9933" stroke-linecap="round" stroke-width="1.5"/>
+    <path d="m11,21 L10,17 L9,14" fill="none" stroke="#FF9933" stroke-linecap="round" stroke-width="1.5"/>
+    <path d="m16,18 L15,14 L14,11" fill="none" stroke="#FF9933" stroke-linecap="round" stroke-width="1.5"/>
+    <path d="m21,16 L20,12 L19,9" fill="none" stroke="#FF9933" stroke-linecap="round" stroke-width="1.5"/>
+    <path d="m26,16 L25,12 L24,9" fill="none" stroke="#FF9933" stroke-linecap="round" stroke-width="1.5"/>
+    <!-- Z轴 -->
+    <line x1="6" y1="24" x2="6" y2="3" stroke="#3399FF" stroke-width="1.5" stroke-linecap="round"/>
+    <polygon points="-2.5,-1.5 3,0 -2.5,1.5" fill="#3399FF" transform="translate(6,3) rotate(-90)"/>
+    <!-- X轴 -->
+    <line x1="5" y1="24" x2="27" y2="24" stroke="#3399FF" stroke-width="1.5" stroke-linecap="round"/>
+    <polygon points="-2,-1.5 2.5,0 -2,1.5" fill="#3399FF" transform="translate(27,24)"/>
+    <!-- Y轴（深度） -->
+    <line x1="6" y1="24" x2="3" y2="17" stroke="#3399FF" stroke-width="1.5" stroke-linecap="round"/>
+    <polygon points="-2,-1.5 2.5,0 -2,1.5" fill="#3399FF" transform="translate(3,17) rotate(-113)"/>
+  </g>
+</svg>

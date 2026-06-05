@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 参数扫描响应曲线 -->
+    <path d="m10,17 C15,17 17,9 25,13" fill="none" stroke="#3399FF" stroke-linecap="round" stroke-width="2"/>
+    <path d="m10,23 C16,23 19,20 25,18" fill="none" stroke="#FF9933" stroke-linecap="round" stroke-width="1.5"/>
+    <!-- X轴 - 参数扫描方向 -->
+    <line x1="7" y1="26" x2="25" y2="26" stroke="#3399FF" stroke-width="1.5" stroke-linecap="round"/>
+    <polygon points="-2,-1.5 2.5,0 -2,1.5" fill="#3399FF" transform="translate(25,26)"/>
+    <!-- 参数轴（Y轴） -->
+    <line x1="7" y1="8" x2="7" y2="26" stroke="#3399FF" stroke-width="1.5" stroke-linecap="round"/>
+    <polygon points="-2.5,-1.5 3,0 -2.5,1.5" fill="#3399FF" transform="translate(7,8) rotate(-90)"/>
+  </g>
+</svg>

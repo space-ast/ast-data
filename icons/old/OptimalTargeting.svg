@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 目标函数曲线（U形） -->
+    <path d="m6,8 C12,8 13,20 17,21 C21,22 22,8 27,8" fill="none" stroke="#3399FF" stroke-linecap="round" stroke-width="2"/>
+    <!-- 迭代逼近点 -->
+    <circle cx="10.8" cy="11.4" r="1.5" fill="#FF9933"/>
+    <circle cx="22.9" cy="11.9" r="1.5" fill="#FF9933"/>
+    <!-- 最优点（靶心） -->
+    <circle cx="17" cy="20.5" r="4" fill="none" stroke="#FF9933" stroke-width="1.5"/>
+    <circle cx="17" cy="20.5" r="2" fill="#FF9933"/>
+  </g>
+</svg>
