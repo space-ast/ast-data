@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 图例外框 -->
+    <rect x="6" y="8" width="20" height="16" rx="1.5"
+          fill="none" stroke="#6C7280" stroke-width="1.5"/>
+    <!-- 蓝色系列样本 -->
+    <line x1="9" y1="14" x2="13" y2="14" stroke="#3399FF" stroke-width="3" stroke-linecap="round"/>
+    <!-- 琥珀色系列样本 -->
+    <line x1="9" y1="18.5" x2="13" y2="18.5" stroke="#FF9933" stroke-width="3" stroke-linecap="round"/>
+    <!-- 文字条 -->
+    <path d="m 16 14 h 8 m -8 4.5 h 6"
+          fill="none" stroke="#6C7280" stroke-width="0.8" stroke-linecap="round"/>
+  </g>
+</svg>

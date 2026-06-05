@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 3纵 + 3横 网格线 -->
+    <path d="M 10 6 v 20 M 16 6 v 20 M 22 6 v 20
+             M 6 10 h 20 M 6 16 h 20 M 6 22 h 20"
+          fill="none" stroke="#6C7280" stroke-width="1" stroke-linecap="round"/>
+  </g>
+</svg>

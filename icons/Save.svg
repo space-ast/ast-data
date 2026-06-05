@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 软盘主体轮廓：顶部左侧滑块凹槽 -->
+    <path d="m 6 4 h 4 v 4 h 8 v -4 h 8 v 23 h -20 z"
+          fill="none" stroke="#6C7280" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- 金属滑块条 -->
+    <rect x="11" y="5" width="6" height="2" rx="0.5" fill="#6C7280"/>
+    <!-- 标签区域 -->
+    <rect x="9" y="10" width="14" height="9" rx="1"
+          fill="none" stroke="#6C7280" stroke-width="1"/>
+    <!-- 标签文字行 -->
+    <path d="m 10.5 12 h 11 m -11 2 h 11 m -11 2 h 8"
+          fill="none" stroke="#6C7280" stroke-width="0.6" stroke-linecap="round"/>
+    <!-- 金属轴心 -->
+    <circle cx="16" cy="23" r="2.5"
+            fill="none" stroke="#6C7280" stroke-width="1.2"/>
+  </g>
+</svg>
