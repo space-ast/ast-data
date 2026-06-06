@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>TreeLine</title>
+    <!-- 曲线 + 数据点 -->
+    <polyline points="3,22 9,14 16,17 21,8 29,12"
+              fill="none" stroke="#6C7280" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="9" cy="14" r="2" fill="#FFF" stroke="#6C7280" stroke-width="1.2"/>
+    <circle cx="16" cy="17" r="2" fill="#FFF" stroke="#6C7280" stroke-width="1.2"/>
+    <circle cx="21" cy="8" r="2" fill="#FFF" stroke="#6C7280" stroke-width="1.2"/>
+  </g>
+</svg>

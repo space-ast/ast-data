@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>ChartFigure</title>
+    <!-- 标题栏 -->
+    <rect x="5" y="4" width="22" height="5" rx="1.5"
+          fill="#9d9d9e" stroke="none"/>
+    <!-- 窗口外框 -->
+    <rect x="5" y="4" width="22" height="20" rx="1.5"
+          fill="none" stroke="#6C7280" stroke-width="1.5"/>
+    <!-- 折线图 -->
+    <polyline points="8,19 12,14 16,16 20,11 25,12"
+              fill="none" stroke="#6C7280" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+</svg>
