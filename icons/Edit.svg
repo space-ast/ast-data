@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 选中矩形框（子图选中示意） -->
+    <rect x="7" y="7" width="16" height="14" rx="0"
+          fill="none" stroke="#6C7280" stroke-width="1.5"/>
+    <!-- 四角缩放手柄 -->
+    <rect x="5" y="5" width="4" height="4" fill="#6C7280" rx="0.5"/>
+    <rect x="21" y="5" width="4" height="4" fill="#6C7280" rx="0.5"/>
+    <rect x="5" y="19" width="4" height="4" fill="#6C7280" rx="0.5"/>
+    <rect x="21" y="19" width="4" height="4" fill="#6C7280" rx="0.5"/>
+    <!-- 编辑光标箭头 -->
+    <polygon points="0,0 0,10 4,6 9,12 12,10 6.5,4 10,0"
+             fill="#6C7280" transform="translate(21,6)"/>
+  </g>
+</svg>

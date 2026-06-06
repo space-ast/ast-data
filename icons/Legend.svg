@@ -6,11 +6,11 @@
     <rect x="6" y="8" width="20" height="16" rx="1.5"
           fill="none" stroke="#6C7280" stroke-width="1.5"/>
     <!-- 蓝色系列样本 -->
-    <line x1="9" y1="14" x2="13" y2="14" stroke="#3399FF" stroke-width="3" stroke-linecap="round"/>
+    <line x1="8.5" y1="13" x2="13.5" y2="13" stroke="#3399FF" stroke-width="3"/>
     <!-- 琥珀色系列样本 -->
-    <line x1="9" y1="18.5" x2="13" y2="18.5" stroke="#FF9933" stroke-width="3" stroke-linecap="round"/>
+    <line x1="8.5" y1="19" x2="13.5" y2="19" stroke="#FF9933" stroke-width="3"/>
     <!-- 文字条 -->
-    <path d="m 16 14 h 8 m -8 4.5 h 6"
+    <path d="m 15.5 13 h 8 m -8 6 h 6"
           fill="none" stroke="#6C7280" stroke-width="0.8" stroke-linecap="round"/>
   </g>
 </svg>
