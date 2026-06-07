@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g class="layer">
+    <title>Layer 1</title>
+    <!-- 工作台桌面 -->
+    <rect x="3" y="22" width="26" height="5" rx="1" fill="#6C7280"/>
+    <!-- 左面板：参数/输入 -->
+    <rect x="7" y="9" width="7" height="13" fill="none" stroke="#3399FF" stroke-width="1.5"/>
+    <!-- 右面板：结果/输出（填充） -->
+    <rect x="18" y="6" width="7" height="16" fill="#3399FF" fill-opacity="0.45" stroke="#3399FF" stroke-width="1.5"/>
+    <!-- 结果标记 -->
+    <rect x="9" y="11" width="3" height="3" rx="0.5" fill="#FF9933"/>
+  </g>
+</svg>
