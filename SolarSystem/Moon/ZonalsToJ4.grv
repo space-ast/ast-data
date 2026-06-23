@@ -1,0 +1,19 @@
+stk.v.5.0
+
+# As of STK 12.7, the coefficients herein are
+# consistent with values from GL0660B.
+
+Model 			 ZonalsToJ4
+CentralBody		 Moon
+Degree 			 4
+Order 			 0
+Gm				 4.90280030555540e+012
+RefDistance		 1.73800000000000e+006
+Normalized		 Yes
+ReferenceFrame	 PrincipalAxes_421
+
+Begin Coefficients
+2 0  -0.9092250523496001E-04      0.0000000000000000E+00
+3 0  -0.3197467349260000E-05      0.0000000000000000E+00
+4 0   0.3234804745143000E-05      0.0000000000000000E+00
+End Coefficients

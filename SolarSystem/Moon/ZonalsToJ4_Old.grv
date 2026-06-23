@@ -1,0 +1,24 @@
+stk.v.5.0
+
+# NOTE: prior to the release of STK 6.2, the Moon's gravity model
+#       was simply a point mass, with values as shown below
+
+# These values were used for Moon's gravity model before 
+# the release of STK 6.2.
+#
+# In addition, the gravitational parameter (Gm value) for the
+# cb file was the GM value shown below
+
+Model 			ZonalsToJ4
+CentralBody		Moon
+Degree 			4
+Order 			0
+GM 				4.9027949E12
+RefDistance 	1738200.0 
+Normalized 		Yes
+
+Begin Coefficients
+2 0 0.0	0.0
+3 0 0.0	0.0
+4 0 0.0	0.0
+End Coefficients
