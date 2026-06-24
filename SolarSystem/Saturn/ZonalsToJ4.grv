@@ -1,0 +1,21 @@
+stk.v.5.0
+
+# These values were used for Saturn's gravity model before 
+# the release of STK 6.2.
+#
+# In addition, the gravitational parameter (Gm value) for the
+# cb file was the GM value shown below
+
+Model 			ZonalsToJ4
+CentralBody			Saturn
+Degree 			4
+Order 			0
+GM 				3.7934e+016
+RefDistance 	6.0268000e+007 
+Normalized 		No
+
+Begin Coefficients
+2 0 -0.01645 	0.0
+3 0  0.00000	0.0
+4 0  0.00100	0.0
+End Coefficients

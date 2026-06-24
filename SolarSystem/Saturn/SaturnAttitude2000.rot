@@ -1,0 +1,41 @@
+#
+# From "Report of the IAU/IAG Working Group on Cartographic Coordinates and
+# Rotational Elements of the Planets and satellites: 2000", 
+# Celestial Mechanics 82: 83-110, 2002.
+#
+# NOTE: These equations refer to the rotation of the magnetic field.
+#
+
+BEGIN RotationalData
+
+	ModelName	IAU 2000
+
+	Description	Coefficients from the IAU 2000 parameter set
+
+	RotationEpoch	2451545.0
+
+	Begin RotationalElement
+	Type			SpinAxisRightAscension
+	Constant		40.589
+	Rate			-0.036
+	RateDot		 	0.0
+	NumberOfTerms		0
+	End RotationalElement
+
+	Begin RotationalElement
+	Type			SpinAxisDeclination
+	Constant		83.537
+	Rate			-0.004
+	RateDot		 	0.0
+	NumberOfTerms		0
+	End RotationalElement
+
+	Begin RotationalElement
+	Type			Rotation
+	Constant		38.90
+	Rate			810.7939024
+	RateDot		   	0.0
+	NumberOfTerms	   	0
+	End RotationalElement
+
+END RotationalData

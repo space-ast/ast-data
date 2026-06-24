@@ -1,0 +1,71 @@
+BEGIN CentralBody
+
+	Name			Sun
+	
+BEGIN		AstroDefinition
+
+	Gm						1.327122E20
+#	
+# The reference size of the Sun is taken from "An Introduction to Modern Astrophysics", Carrol et al, 2007.
+#
+	
+	GravityModel		    ZonalsToJ4
+	
+    Shape      	 			Sphere
+    Radius					695508000.0
+		
+# As of STK v11.2, RefDistance is established from the GravityModel      
+# and MinRadius is determined from Shape parameters. Uncomment lines
+# below to for STK versions prior to v11.2.
+#	RefDistance				695508000.0
+#	MinRadius				695508000.0
+
+	PathGenerator			TwoBody
+	PathGenerator			StkExternal
+	PathGenerator			Astrogator
+	PathGenerator           SPICE
+	PathGenerator           HoldCBIPosition
+	PathGenerator          	HoldCBFPosition
+	PathGenerator			HPOP
+	
+END			AstroDefinition
+
+BEGIN               EphemerisData
+
+# NOTE: currently the ephemeris source is set to use JPL DE file
+#
+# To instead use JPL Spice file, comment out the following line and uncomment the JplSpice line
+
+	EphemerisSource              JplDE
+#	EphemerisSource              JplSpice
+
+	JplSpiceId                   10
+
+END					EphemerisData
+
+BEGIN SpinData
+
+	RotationDefinitionFile	  SunAttitude2006.rot
+
+END SpinData
+
+
+BEGIN	Sun
+	
+#
+# The solar luminosity is a measure of the power output of the Sun. We're interested in that
+# part of the power that would effect satellite solar radiation pressure, and thus we're not 
+# interested in the power from neutrinos which tend to pass right thru the spacecraft.
+#
+# In reality, the luminosity is not a fixed constant. See  http://acrim.com/  for information
+# about different spacecraft taking measurements to model the luminosity over the last few decades.
+# Even the mean value has changed over time. It seems the best cited value to use is from "An 
+# Introduction to Modern Astrophysics", Carrol et al, 2007.
+#
+# Value below expressed in Watts
+#
+	Luminosity 3.839E26
+	
+END		Sun
+	
+END		CentralBody

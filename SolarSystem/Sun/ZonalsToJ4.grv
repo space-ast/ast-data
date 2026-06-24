@@ -1,0 +1,19 @@
+stk.v.5.0
+
+Model 			ZonalsToJ4
+CentralBody			Sun
+Degree 			4
+Order 			0
+GM 				1.327122E20
+#	
+# The reference size of the Sun is taken from 
+# "An Introduction to Modern Astrophysics", Carrol et al, 2007.
+#
+RefDistance 	695508000.0 
+Normalized 		No
+
+Begin Coefficients
+2 0  0.0  0.0
+3 0  0.0  0.0
+4 0  0.0  0.0
+End Coefficients

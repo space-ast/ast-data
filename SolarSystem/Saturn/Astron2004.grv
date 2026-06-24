@@ -1,0 +1,28 @@
+stk.v.5.0
+
+# http://ssd.jpl.nasa.gov/sat_gravity.html
+
+# Reference:	Jacobson, R. A., "The orbits of the major 
+#				Saturnian satellites and the gravity feild
+#				of Saturn from spacecraft and Earthbased 
+#				observations", submitted to Astronomical Journal, 2004.
+
+# NOTE: the value listed for J8 is from a different reference
+#		than the other gravity parameters which evidently were 
+#		computed without it. Therefore, it will be ignored here.
+
+Model 			Astron2004
+CentralBody			Saturn
+Degree 			6
+Order 			0
+GM 				3.7931284e+016
+RefDistance 	60330.0e+03  
+Normalized 		No
+
+Begin Coefficients
+2 0  -16292.0e-6  		0.0
+3 0       0.0e-6  		0.0
+4 0     931.0e-6  		0.0
+5 0       0.0  			0.0
+6 0     -91.0e-6  		0.0
+End Coefficients

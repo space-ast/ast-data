@@ -1,0 +1,22 @@
+stk.v.5.0
+
+# These values were used for Venus' gravity model before 
+# the release of STK 6.2.
+#
+# In addition, the gravitational parameter (Gm value) for the
+# cb file was the GM value shown below
+
+
+Model 			ZonalsToJ4
+CentralBody			Venus
+Degree 			4
+Order 			0
+GM 				3.248588e+014
+RefDistance 	6.0519e+006 
+Normalized 		No
+
+Begin Coefficients
+2 0 -0.000027	0.0
+3 0  0.0		0.0
+4 0  0.0		0.0
+End Coefficients

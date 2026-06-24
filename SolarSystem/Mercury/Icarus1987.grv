@@ -1,0 +1,23 @@
+stk.v.5.0
+
+# Reference:	Anderson, J. J., Colombo, G., Esposito, P. B., 
+#				Lau E. L., and Trager, G. B. "The Mass, Gravity
+#				Field, and Ephemeris of Mercury", Icarus 71,
+#				337-349, 1987.
+
+# NOTE: the uncertainty of J2 is 33% and C22 is 50%
+
+Model 			Icarus1987
+CentralBody			Mercury
+Degree 			4
+Order 			2
+GM 				2.203209e+013
+RefDistance 	2439.0e+03
+Normalized 		No
+
+Begin Coefficients
+2 0 -6.0e-5 	0.0
+2 2  1.0e-5		0.0
+3 0  0.0 		0.0
+4 0  0.0		0.0
+End Coefficients

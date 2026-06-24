@@ -1,0 +1,15 @@
+stk.v.5.0
+
+Model 			ZonalsToJ4
+CentralBody			Pluto
+Degree 			4
+Order 			0
+GM 				1.009076e+012
+RefDistance 	1.195000e+006 
+Normalized 		No
+
+Begin Coefficients
+2 0 0.0 0.0
+3 0 0.0 0.0
+4 0 0.0	0.0
+End Coefficients

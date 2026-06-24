@@ -1,0 +1,91 @@
+
+BEGIN CentralBody
+
+    Name            Mercury
+
+    Prefix          Planeto
+
+    ShortDescription            Planet Mercury
+
+    Description         Planet Mercury
+
+    Type            Planet
+
+	FuncCbInit      MercuryInit
+	FuncCbFree      PlanetFree
+	FuncCbLoad      PlanetLoad
+	FuncCbSave      PlanetSave
+	FuncCbCopy      PlanetCopy
+	FuncCbSet       PlanetSet
+
+BEGIN          AstroDefinition
+
+# value from Icarus1987.grv
+      Gm                  2.203209e+013
+      
+#
+# Shape values are from "Report of the IAU/IAG Working Group on Cartographic Coordinates
+# and Rotational Elements: 2006", Celestial Mechanics Dyn Astry 98: 155-180, 2007.
+#
+            
+      GravityModel		  Icarus1987
+      
+# To reset the values to those used previous to STK 6.2,
+# uncomment the following lines
+#	  Gm				  2.203208e+013
+#	  GravityModel		  ZonalsToJ4
+
+      Shape     	 Sphere
+      Radius      	 2.43970000000000e+006
+
+      MaxAltitude         0.00000000000000e+000
+
+# As of STK v11.2, RefDistance is established from the GravityModel      
+# and MinRadius is determined from Shape parameters. Uncomment lines
+# below to for STK versions prior to v11.2.
+#     RefDistance         2.43970000000000e+006
+#     MinRadius           2.43970000000000e+006
+
+      ParentName          Sun
+
+      PathGenerator GreatArc
+      PathGenerator J2Perturbation
+      PathGenerator J4Perturbation
+      PathGenerator Rocket
+      PathGenerator TwoBody
+      PathGenerator StkExternal
+      PathGenerator Astrogator
+      PathGenerator SimpleAscent
+      PathGenerator SPICE
+      PathGenerator HoldCBIPosition
+      PathGenerator HoldCBFPosition
+      PathGenerator HPOP
+
+
+END          AstroDefinition
+
+BEGIN		SpinData
+
+	RotationDefinitionFile	MercuryAttitude2009.rot
+
+END 			SpinData
+
+BEGIN               EphemerisData
+
+#	To instead use JPL DE file, uncomment out the following line and comment the JplSpice line
+	
+#	EphemerisSource              JplDE
+	EphemerisSource              JplSpice
+	
+	JplSpiceId                   199
+
+
+END					EphemerisData
+
+BEGIN	Mercury
+
+END     Mercury
+
+    ReadOnly            Yes
+
+END CentralBody

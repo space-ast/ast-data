@@ -1,0 +1,15 @@
+stk.v.5.0
+
+Model 			ZonalsToJ4
+CentralBody			Uranus
+Degree 			4
+Order 			0
+GM 				5.8032e+015
+RefDistance 	2.5559000e+007
+Normalized 		No
+
+Begin Coefficients
+2 0 -0.012 	0.0
+3 0  0.000	0.0
+4 0 -0.012	0.0
+End Coefficients

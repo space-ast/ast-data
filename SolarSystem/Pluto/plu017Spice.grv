@@ -1,0 +1,40 @@
+stk.v.5.0
+
+# plu017.bsp
+#
+# Planetary Ephemeris Number: DE-0414/LE-0414
+# 
+# Bodies on the File:
+# 
+#   Name     Number            GM             NDIV   NDEG   Model
+#   Charon     901    1.031550043961694E+02      1     15   SATORB
+#   Nix        902    1.107847929355091E-02      1     15   SATORB
+#   Hydra      903    6.632552447225902E-02      1     15   SATORB
+#   Pluto      999    8.737674473980320E+02      1     15   SATORB
+#   System            9.769998557979673E+02
+# 
+# Additional Constants on the File:
+# 
+#  AU       1.495978707008525E+08   RADIUS   1.151000000000000E+03
+#  J902     0.000000000000000E+00   POLTIM   2.451545000000000E+06
+#  ZACPL9   3.130200000000000E+02   ZDEPL9   9.090000000000000E+00
+#  DACPL9   0.000000000000000E+00   DDEPL9   0.000000000000000E+00
+#  WPL9     2.367700000000000E+02   WDP9    -5.636231950000000E+01
+#  GM5      1.267127648000000E+08   GM6      3.794058520000000E+07
+#  GM7      5.794548600000000E+06   GM8      6.836534900000000E+06
+#  GM10     1.327132332664355E+11
+#
+
+Model 			plu017Spice
+CentralBody		Pluto
+Degree 			4
+Order 			0
+GM 				8.737674473980320E+11
+RefDistance 	1.151e+06
+Normalized 		No
+
+Begin Coefficients
+2 0  0.0  	0.0
+3 0  0.0    0.0
+4 0  0.0 	0.0
+End Coefficients

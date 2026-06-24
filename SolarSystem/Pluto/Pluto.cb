@@ -1,0 +1,105 @@
+
+BEGIN CentralBody
+
+    Name            Pluto
+    
+	FuncCbInit      PlutoInit
+	FuncCbFree      PlanetFree
+	FuncCbLoad      PlanetLoad
+	FuncCbSave      PlanetSave
+	FuncCbCopy      PlanetCopy
+	FuncCbSet       PlanetSet
+
+    Prefix          Planeto
+
+    ShortDescription    Planet Pluto
+    Description         Planet Pluto
+
+    Type            Planet
+
+BEGIN          AstroDefinition
+
+# value from ZonalsToJ4.grv
+#      Gm                 1.009076e+012
+
+# value from plu017Spice.grv
+	   Gm				  8.737674473980320E+11
+      
+# Gm for the Plutonian system from plu017.bsp file
+	  SystemGm			  9.769998557979673e+011
+	  
+#
+# Shape values are from "Report of the IAU/IAG Working Group on Cartographic Coordinates
+# and Rotational Elements: 2006", Celestial Mechanics Dyn Astry 98: 155-180, 2007.
+#
+      
+      GravityModel		  plu017Spice
+
+      Shape      	 Sphere
+      Radius      	 1.195e+006
+		      
+      MaxAltitude         0.00000000000000e+000
+
+# As of STK v11.2, RefDistance is established from the GravityModel      
+# and MinRadius is determined from Shape parameters. Uncomment lines
+# below to for STK versions prior to v11.2.
+#     RefDistance         1.195e+006
+#     MinRadius           1.195e+006
+
+# Previous to STK 9.0, the folowing shape value were used:
+#	  RefDistance    1.162e+006
+#	  MinRadius      1.162e+006
+#	  MajorAxis      1.162e+006
+#	  MiddleAxis	 1.162e+006
+#	  MinorAxis      1.162e+006
+
+
+      ParentName          Sun
+
+      PathGenerator GreatArc
+      PathGenerator J2Perturbation
+      PathGenerator J4Perturbation
+      PathGenerator Rocket
+      PathGenerator TwoBody
+      PathGenerator StkExternal
+      PathGenerator Astrogator
+      PathGenerator SimpleAscent
+      PathGenerator SPICE
+      PathGenerator HoldCBIPosition
+      PathGenerator HoldCBFPosition
+      PathGenerator HPOP
+
+END          AstroDefinition
+
+BEGIN		SpinData
+
+	RotationDefinitionFile		PlutoAttitude2011.rot
+	
+END 			SpinData
+
+BEGIN               EphemerisData
+
+# NOTE: currently the ephemeris source is set to use JPL SPICE files
+#		which can locate the barycenter or the planet center depending on the JplSpiceId
+#
+#		The JPL DE file only contains the barycenter
+#
+#		To instead use JPL DE file, uncomment out the following line and comment the JplSpice line
+
+#	EphemerisSource              JplDE
+	EphemerisSource              JplSpice
+
+# NOTE: if you are using SPICE, you may choose to use the planet center (999) or barycenter (9)
+
+	JplSpiceId                   999
+#	JplSpiceId                   9
+
+END					EphemerisData
+
+BEGIN	Pluto
+
+END     Pluto
+
+    ReadOnly            Yes
+
+END CentralBody
